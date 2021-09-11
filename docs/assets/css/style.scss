@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
 
 /** Site header */
 .site-header { border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
