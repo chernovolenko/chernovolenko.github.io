@@ -4,8 +4,16 @@
 // @import "{{ site.theme }}";
 
 .site-header {
+  border-top: 0px
   border-bottom: 1px
   solid #e8e8e8;
   min-height: 55px;
   position: relative;
+}
+
+pre, code {
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #f4f5f7
 }
