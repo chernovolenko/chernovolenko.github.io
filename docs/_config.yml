@@ -32,6 +32,9 @@ instagram_username: pchernovolenko
 theme: minima
 plugins:
   - jekyll-feed
+  
+minima:
+  date_format: "%b %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
