@@ -18,7 +18,7 @@ Jekyll also offers powerful support for code snippets:
 private static let staticVariable = 0
 {% endhighlight %}
 
-Check out the [Instagram][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the [Instagram] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [Instagram]: https://instagram.com/pchernovolenko
 [jekyll-gh]:   https://github.com/jekyll/jekyll
