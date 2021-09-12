@@ -19,6 +19,12 @@
   font-size: 12px;
 }
 
+.card-tag {
+  color: #ff7843;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
 pre, code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
@@ -35,8 +41,8 @@ pre, code {
 
 .box {
   grid-row-end: span 1;
-  background-color: #748CAB;
-  color: #000000;
+  background-color: #f9f9f9;
+  color: #ffffff;
   border-radius: 5px;
   padding: 20px;
 }

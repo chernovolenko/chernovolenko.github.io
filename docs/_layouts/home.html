@@ -36,7 +36,7 @@ layout: default
 <div class="container">
     {% for tag in site.tags %}
       <div class="box">
-        <h3>{{ tag[0] | replace: "_"," " }}</h3>
+        <p class="card-tag">{{ tag[0] | replace: "_"," " }}</p>
         <ul>
           {% for post in tag[1] %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
