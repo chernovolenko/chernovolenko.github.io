@@ -23,3 +23,28 @@ Check out the [Instagram] for more info on how to get the most out of Jekyll. Fi
 [Instagram]: https://instagram.com/pchernovolenko
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+<div align="center">
+  <img src="https://static01.nyt.com/images/2019/10/01/us/2019-09-hk-protest-timeline-promo-1569935056934/2019-09-hk-protest-timeline-promo-1569935056934-threeByTwoSmallAt2X-v2.png"/>
+</div>
+
+<script>
+  data = [4, 8, 15, 16, 23, 42]
+  {
+    const div = d3.create("div")
+        .style("font", "10px sans-serif")
+        .style("text-align", "right")
+        .style("color", "white");
+
+    div.selectAll("div")
+      .data(data)
+      .join("div")
+        .style("background", "steelblue")
+        .style("padding", "3px")
+        .style("margin", "1px")
+        .style("width", d => `${d * 10}px`)
+        .text(d => d);
+
+    return div.node();
+  }
+</script>
