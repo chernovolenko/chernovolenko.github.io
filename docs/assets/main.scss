@@ -33,6 +33,9 @@ pre, code {
 
 .box {
   display: flex;
+  position: relative;
+  justify-content: space-between;
+  box-sizing: border-box;
   background-color: #F0EBD8;
   color: #000000;
   border-radius: 5px;
