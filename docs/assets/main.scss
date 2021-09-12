@@ -3,6 +3,11 @@
 
 @import "minima";
 
+ul, ol {
+  margin-left: 0px;
+  list-style-type: none;
+}
+
 .site-header {
   border-top: 0px;
   border-bottom: 1px solid #e8e8e8;
