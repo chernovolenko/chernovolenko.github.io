@@ -1,10 +1,12 @@
-var svg = d3.select("#map")
-    .append("svg")
-    .attr("style", "solid 1px black")
-    .attr("width", "100%");
+var length = 300;
+var width = 350;
 
-var g = svg.append("g");
-d3.json("/assets/posts/sweden/map.svg", function (error, json) {
+var svg = d3.select("#map").append("svg")
+.attr('width', "100%"));
+var group = svg.append('g');
+
+
+d3.json("/assets/posts/sweden/sweden-counties.geojson", function (error, json) {
     g.selectAll("path")
            .data(json.features)
            .enter()
