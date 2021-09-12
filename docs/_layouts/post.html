@@ -28,7 +28,7 @@ layout: default
       {%- if page.author -%}
         <p>
         {% for tag in page.tags %}
-          <span class="post-tag">{{ tag }}</span>
+          <span class="post-tag">{{ tag | replace: " ","_" }}</span>
         {% endfor %}
         </p>
       {%- endif -%}

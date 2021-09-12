@@ -4,7 +4,7 @@ title:  "My First Post"
 date:   2021-09-11 21:41:59 +0200
 categories: blog
 tags:
-  General Tag
+  General_Tag
   Sweden
 author: Pavlo Chernovolenko
 ---
