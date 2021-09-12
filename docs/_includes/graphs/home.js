@@ -4,7 +4,7 @@ var svg = d3.select("#map")
     .attr("width", "100%");
 
 var g = svg.append("g");
-d3.json("map.svg", function (error, json) {
+d3.json("../assets/posts/sweden/map.svg", function (error, json) {
     g.selectAll("path")
            .data(json.features)
            .enter()
