@@ -27,12 +27,15 @@ pre, code {
 }
 
 .container {
-  margin: 10
+  display: grid;
+  gap: 10px;
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  position: relative;
+  display: flex;
+  background-color: #F0EBD8;
+  color: #000000;
   border-radius: 5px;
   padding: 20px;
   max-width: 50%;
