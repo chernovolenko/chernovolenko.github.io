@@ -4,5 +4,5 @@
 
 layout: home
 jsarr:
-  - graphs/home.js
+  - graphs/map.js
 ---
