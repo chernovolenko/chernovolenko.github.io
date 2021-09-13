@@ -24,4 +24,4 @@ function drawMap(err, world) {
     .attr("d", path);
 }
 
-d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json", drawMap)
+d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json").then(drawMap)
