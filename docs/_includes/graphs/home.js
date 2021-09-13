@@ -1,18 +1,27 @@
-var svg = d3
-  .select("#map")
-  .append("svg")
-  .attr("width", "100%");
-var group = svg.append("g");
 
-d3.json("/assets/posts/sweden/sweden-counties.geojson", function(error, geoData) {
-    group.append("path").attr("d", path(geoData));
-});
+const svg = d3.select("#map")
+const myProjection = d3.geoNaturalEarth1()
+const path = d3.geoPath().projection(myProjection)
+const graticule = d3.geoGraticule()
 
-// d3.json("/assets/posts/sweden/sweden-counties.geojson", function (error, json) {
-//     g.selectAll("path")
-//            .data(json.features)
-//            .enter()
-//            .append("path")
-//            .attr("d", path)
-//            .style("fill", "red");
-// });
+function drawMap(err, world) {
+  if (err) throw err
+
+  svg.append("path")
+    .datum(graticule)
+    .attr("class", "graticule")
+    .attr("d", path);
+
+  svg.append("path")
+    .datum(graticule.outline)
+    .attr("class", "foreground")
+    .attr("d", path);
+
+  svg.append("g")
+    .selectAll("path")
+    .data(topojson.feature(world, world.objects.countries).features)
+    .enter().append("path")
+    .attr("d", path);
+}
+
+d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json", drawMap)
