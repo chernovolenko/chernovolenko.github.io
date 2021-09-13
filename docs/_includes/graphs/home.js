@@ -9,7 +9,7 @@ var h = 300;
 //                        .scale(1);
 
 //Define path generator
-var path = d3.geo.path()
+var path = d3.geoPath()
                  .projection(nil);
 
 //Create SVG element
