@@ -18,7 +18,7 @@ var svg = d3.select("body")
             .attr("height", h);
 
 //Load in GeoJSON data
-d3.json("assets/posts/sweden/sweden-countries.json", function(json) {
+d3.json("assets/posts/sweden/sweden-counties.geojson", function(json) {
 
     // Calculate bounding box transforms for entire collection
     var b = path.bounds( json ),
