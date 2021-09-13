@@ -6,7 +6,7 @@ var group = svg.append("g");
 
 d3.json("/assets/posts/sweden/sweden-counties.geojson", function(error, geoData) {
     group.append("path").attr("d", path(geoData));
-}
+});
 
 // d3.json("/assets/posts/sweden/sweden-counties.geojson", function (error, json) {
 //     g.selectAll("path")
