@@ -1,27 +1,43 @@
 
-const svg = d3.select("#map")
-const myProjection = d3.geoNaturalEarth1()
-const path = d3.geoPath().projection(myProjection)
-const graticule = d3.geoGraticule()
+//Width and height
+var w = 500;
+var h = 300;
 
-function drawMap(err, world) {
-  if (err) throw err
+//Define map projection
+var projection = d3.geo.mercator()
+                       .translate([0, 0])
+                       .scale(1);
 
-  svg.append("path")
-    .datum(graticule)
-    .attr("class", "graticule")
-    .attr("d", path);
+//Define path generator
+var path = d3.geo.path()
+                 .projection(projection);
 
-  svg.append("path")
-    .datum(graticule.outline)
-    .attr("class", "foreground")
-    .attr("d", path);
+//Create SVG element
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
 
-  svg.append("g")
-    .selectAll("path")
-    .data(topojson.feature(world, world.objects.countries).features)
-    .enter().append("path")
-    .attr("d", path);
-}
+//Load in GeoJSON data
+d3.json("/assets/posts/sweden/sweden-countries.json", function(json) {
 
-d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json").then(drawMap)
+    // Calculate bounding box transforms for entire collection
+    var b = path.bounds( json ),
+    s = .95 / Math.max((b[1][0] - b[0][0]) / w, (b[1][1] - b[0][1]) / h),
+    t = [(w - s * (b[1][0] + b[0][0])) / 2, (h - s * (b[1][1] + b[0][1])) / 2];
+
+    // Update the projection
+    projection
+      .scale(s)
+      .translate(t);
+
+
+    //Bind data and create one path per GeoJSON feature
+    svg.selectAll("path")
+       .data(json.features)
+       .enter()
+       .append("path")
+       .attr("d", path)
+       .style("fill", "steelblue");
+
+});
