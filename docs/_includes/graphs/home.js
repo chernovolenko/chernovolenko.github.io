@@ -3,14 +3,14 @@
 var w = 500;
 var h = 300;
 
-//Define map projection
-var projection = d3.geo.mercator()
-                       .translate([0, 0])
-                       .scale(1);
+// //Define map projection
+// var projection = d3.geo.mercator()
+//                        .translate([0, 0])
+//                        .scale(1);
 
 //Define path generator
 var path = d3.geo.path()
-                 .projection(projection);
+                 .projection(nil);
 
 //Create SVG element
 var svg = d3.select("body")
