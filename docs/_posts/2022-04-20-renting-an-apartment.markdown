@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Renting an apartment in Stockholm"
+date:   2022-04-20 21:41:59 +0200
+categories: blog
+tags:
+  Sweden
+author: Pavlo Chernovolenko
+image: assets/posts/image.png
+jsarr:
+  - graphs/test.js
+---
+
+I thought it might be helpful for someone to read thought my experience of searching for and renting an apartment in Stockholm. There were few things that where interesting for me, and I hope you will take something with you after reading.
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+Jekyll requires blog post files to be named according to the following format:
+
+`YEAR-MONTH-DAY-title.MARKUP`
+
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight swift %}
+private static let staticVariable = 0
+{% endhighlight %}
+
+Check out the [Instagram] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[Instagram]: https://instagram.com/pchernovolenko
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+
+<div align="center">
+  <img src="https://static01.nyt.com/images/2019/10/01/us/2019-09-hk-protest-timeline-promo-1569935056934/2019-09-hk-protest-timeline-promo-1569935056934-threeByTwoSmallAt2X-v2.png"/>
+</div>
+
+<div id="viz"></div>
