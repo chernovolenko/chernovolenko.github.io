@@ -20,7 +20,7 @@
 
 title: chernovolenko.com
 email: ""
-description: >- # this means to ignore newlines until "baseurl:"
+description: #>- this means to ignore newlines until "baseurl:"
   🇸🇪 Stockholm, 2022
   🇺🇦 Lviv, 2017
 baseurl: "" # the subpath of your site, e.g. /blog
