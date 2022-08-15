@@ -21,8 +21,7 @@
 title: chernovolenko.com
 email: ""
 description: #>- this means to ignore newlines until "baseurl:"
-  🇸🇪 Stockholm, 2022<br><br>
-  🇺🇦 Lviv, 2017
+  🇸🇪 Stockholm, 2022
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
