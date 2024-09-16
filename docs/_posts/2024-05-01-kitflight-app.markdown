@@ -32,7 +32,9 @@ Kitflight is specifically designed for experimental aircraft builders, offering 
 * **iCloud Sync**: Access your logs across all devices with seamless iCloud integration, so your data is always up-to-date.
 * **Easy to start**: No account needed. No special requirements. Ready to use.
 
+
 ![Log Editor Split View](../assets/Device-4.png)
+
 
 ### Why Choose Kitflight Over Self-Made or Other Logging Apps?
 
@@ -46,8 +48,12 @@ Kitflight was designed with the unique needs of kit plane builders in mind. Its 
 
 Experimental aircraft builders must document the construction process to meet certain certification requirements. Kitflight makes it easy to log each step of the process, so when the time comes to show your logs, you have a well-organized, detailed record of every task, accompanied with photos, and time spent.
 
+
+![Kitflight Search](../assets/Device-3.png)
+
+
 ### Start Logging Your Aircraft Build Today
 
 Kitflight is your ideal companion throughout the aircraft building process, providing everything you need to stay organized and keep your logs in one secure place.
 
-Ready to simplify your aircraft build logging? Download Kitflight and start tracking. 
+Ready to simplify your aircraft build logging? [Download Kitflight](https://apps.apple.com/app/kitflight/id6670708403) and start tracking.
