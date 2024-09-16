@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kitflight: The Ultimate Logging Tool for Experimental Aircraft Builders"
+title:  "Kitflight App: Experimental Aircraft Builder's Log"
 date:   2024-06-05 21:41:59 +0200
 categories: blog
 tags:
