@@ -26,7 +26,9 @@ Kitflight is specifically designed for experimental aircraft builders, offering 
 * **Organize Your Build**: Categorize your work for a more organized and structured log.
 * **Search Your Logs**: Use advanced search features to quickly find specific entries.
 * **iCloud Sync**: Access your logs across all devices with seamless iCloud integration, so your data is always up-to-date.
-* **Easy to start**: No account needed. No special requirements. Ready to use. 
+* **Easy to start**: No account needed. No special requirements. Ready to use.
+
+![Log Editor Split View](assets/Device-4.png)
 
 ### Why Choose Kitflight Over Self-Made or Other Logging Apps?
 
