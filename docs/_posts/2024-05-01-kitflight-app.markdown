@@ -19,14 +19,14 @@ As a kit plane builder, tracking your progress—from time spent on tasks to cat
 
 Kitflight is specifically designed for experimental aircraft builders, offering a streamlined way to manage your logs directly from your mobile devices. Unlike traditional logging systems that are limited to desktop or web apps, Kitflight is mobile-first, allowing you to document progress right from the shop floor with or without internet connection. Whether you’re attaching photos to your logs, tracking time spent on tasks, or adding detailed annotations, Kitflight makes sure all your work is in one place and easily accessible.
 
-### Key Features of Kitflight app:
+### Key Features of Kitflight App
 
-- **Track Time Spent on Tasks**: Effortlessly log the time you spend on each part of your build.
-- **Attach and Annotate Photos**: Add annotations to photos to make work logs more descriptive.
-- **Organize Your Build**: Categorize your work for a more organized and structured log.
-- **Search Your Logs**: Use advanced search features to quickly find specific entries.
-- **iCloud Sync**: Access your logs across all devices with seamless iCloud integration, so your data is always up-to-date.
-- **Easy to start**: No account needed. No special requirements. Ready to use. 
+* **Track Time Spent on Tasks**: Effortlessly log the time you spend on each part of your build.
+* **Attach and Annotate Photos**: Add annotations to photos to make work logs more descriptive.
+* **Organize Your Build**: Categorize your work for a more organized and structured log.
+* **Search Your Logs**: Use advanced search features to quickly find specific entries.
+* **iCloud Sync**: Access your logs across all devices with seamless iCloud integration, so your data is always up-to-date.
+* **Easy to start**: No account needed. No special requirements. Ready to use. 
 
 ### Why Choose Kitflight Over Self-Made or Other Logging Apps?
 
