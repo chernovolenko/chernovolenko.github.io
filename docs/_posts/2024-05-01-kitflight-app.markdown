@@ -33,7 +33,7 @@ Kitflight is specifically designed for experimental aircraft builders, offering 
 * **Easy to start**: No account needed. No special requirements. Ready to use.
 
 
-![Log Editor Split View](../assets/Device-4.png)
+![Log Editor Split View]({{ "/assets/Device-4.png" | relative_url }})
 
 
 ### Why Choose Kitflight Over Self-Made or Other Logging Apps?
@@ -49,7 +49,7 @@ Kitflight was designed with the unique needs of kit plane builders in mind. Its 
 Experimental aircraft builders must document the construction process to meet certain certification requirements. Kitflight makes it easy to log each step of the process, so when the time comes to show your logs, you have a well-organized, detailed record of every task, accompanied with photos, and time spent.
 
 
-![Kitflight Search](../assets/Device-3.png)
+![Kitflight Search]({{ "/assets/Device-3.png" | relative_url }})
 
 
 ### Start Logging Your Aircraft Build Today
