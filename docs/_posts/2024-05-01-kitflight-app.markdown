@@ -5,6 +5,10 @@ date:   2024-06-05 21:41:59 +0200
 categories: blog
 tags:
   Kitflight
+  Kit Plane
+  Van's Aircraft
+  FAA
+  EAA
 author: Pavlo Chernovolenko
 image: assets/posts/image.png
 jsarr:
@@ -28,7 +32,7 @@ Kitflight is specifically designed for experimental aircraft builders, offering 
 * **iCloud Sync**: Access your logs across all devices with seamless iCloud integration, so your data is always up-to-date.
 * **Easy to start**: No account needed. No special requirements. Ready to use.
 
-![Log Editor Split View](assets/Device-4.png)
+![Log Editor Split View](../assets/Device-4.png)
 
 ### Why Choose Kitflight Over Self-Made or Other Logging Apps?
 
