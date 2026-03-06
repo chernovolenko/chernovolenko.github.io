@@ -1,93 +1,51 @@
 {% comment %}
   _includes/annotated-image.html
 
-  USAGE:
   {% include annotated-image.html
-     src="/assets/images/photo.jpg"
+     src="/assets/photo.jpg"
      alt="Description"
-     caption="Fig 1 — Caption text"
+     caption="Fig 1 — Caption"
      annotations='[
-       { "x": 32, "y": 45, "style": "number",      "index": 1, "title": "Canopy latch",  "body": "Verify travel before final rivet." },
-       { "x": 61, "y": 28, "style": "warning",                 "title": "Pinch point",   "body": "Keep fingers clear during close cycle." },
-       { "x": 75, "y": 60, "style": "approved",                "title": "Torque OK",     "body": "100–140 in-lb. Cotter pins installed." },
-       { "x": 18, "y": 70, "style": "issue",                   "title": "Edge crack",    "body": "Do not rivet. Needs inspection." },
-       { "x": 50, "y": 15, "style": "information",             "title": "Part number",   "body": "VA-146 per drawing 46A." },
-       { "x": 88, "y": 50, "style": "question",                "title": "Gap OK?",       "body": "0.032\" gap — within tolerance?" },
-       { "x": 40, "y": 80, "style": "letter",      "letter": "A", "title": "Rib A",     "body": "Forward-most rib in the assembly." }
+       { "x": 0.5, "y": 0.5, "style": "number",      "index": 1, "title": "Spar cap" },
+       { "x": 0.2, "y": 0.3, "style": "warning",                 "title": "Pinch point" },
+       { "x": 0.8, "y": 0.7, "style": "approved",                "title": "Torque OK" }
      ]'
   %}
 
-  style values: number | letter | information | warning | issue | question | approved
+  x, y are 0–1 fractions of image size.
+  style: number | letter | information | warning | issue | question | approved
 {% endcomment %}
 
 {% unless page.annotated_image_loaded %}
 <style>
-.ann-wrap { position: relative; display: block; line-height: 0; }
-.ann-wrap img { display: block; width: 100%; height: auto; border-radius: 6px; }
-
+.ann { position: relative; display: inline-block; }
+.ann img { display: block; width: 100%; border-radius: 6px; }
 .ann-dot {
   position: absolute;
   width: 26px; height: 26px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.35);
-  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
   display: grid; place-items: center;
-  background: var(--c);
   cursor: default;
-  z-index: 10;
+  transform: translate(-50%, -50%);
 }
-.ann-dot::before {
-  content: '';
-  position: absolute;
-  inset: -5px; border-radius: 50%;
-  border: 1.5px solid var(--c);
-  opacity: 0.3;
-  animation: ann-p 2.6s ease-in-out infinite;
-}
-@keyframes ann-p {
-  0%,100% { transform: scale(1);   opacity: 0.3; }
-  60%      { transform: scale(1.8); opacity: 0;   }
-}
-
-.ann-dot svg { width: 13px; height: 13px; fill: #fff; display: block; pointer-events: none; }
-.ann-dot span { font-size: 11px; font-weight: 700; color: #fff; line-height: 1; pointer-events: none; }
-
+.ann-dot svg { width: 13px; height: 13px; fill: #fff; pointer-events: none; }
+.ann-dot span { font-size: 11px; font-weight: 700; color: #fff; pointer-events: none; }
 .ann-tip {
+  display: none;
   position: absolute;
-  width: 200px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.06);
-  padding: 9px 11px 10px;
-  z-index: 20;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #111;
+  white-space: nowrap;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s ease;
+  z-index: 99;
 }
-.ann-tip.show { opacity: 1; }
-
-.ann-tip-title { font-size: 12px; font-weight: 600; color: #111; margin-bottom: 3px; }
-.ann-tip-body  { font-size: 12px; line-height: 1.45; color: #555; }
-.ann-tip-body strong { color: #111; }
-
-/* Arrow */
-.ann-tip::before {
-  content: '';
-  position: absolute;
-  width: 8px; height: 8px;
-  background: #fff;
-  transform: rotate(45deg);
-  box-shadow: -1px -1px 0 rgba(0,0,0,0.05);
-}
-.ann-tip.d-down::before  { top: -4px;    left: 15px; }
-.ann-tip.d-up::before    { bottom: -4px; left: 15px; box-shadow: 1px 1px 0 rgba(0,0,0,0.05); }
-.ann-tip.d-right::before { top: 10px;    left: -4px; box-shadow: -1px 1px 0 rgba(0,0,0,0.05); }
-.ann-tip.d-left::before  { top: 10px;   right: -4px; box-shadow: 1px -1px 0 rgba(0,0,0,0.05); }
-
 .ann-caption { display: block; font-size: 11px; color: #999; margin-top: 6px; }
 </style>
-
 <script>
 (function(){
   var C={number:'#1a1a1a',letter:'#1a1a1a',warning:'#f57c00',issue:'#d32f2f',information:'#1565c0',question:'#1565c0',approved:'#2e7d32'};
@@ -98,96 +56,39 @@
     question:   '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm.5 11.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.6-3.2c.05-.28.22-.52.47-.7.82-.59 1.38-1.44 1.38-2.35 0-1.52-1.23-2.75-2.75-2.75S6.25 5.73 6.25 7.25h1.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25c0 .45-.28.88-.75 1.22-.57.41-.97 1.02-1.07 1.72l-.03.31h1.5z"/></svg>',
     approved:   '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm3.53 5.97-4.25 4.25a.75.75 0 0 1-1.06 0l-1.75-1.75a.75.75 0 1 1 1.06-1.06l1.22 1.22 3.72-3.72a.75.75 0 0 1 1.06 1.06z"/></svg>'
   };
-
-  function init() {
-    document.querySelectorAll('.ann-wrap[data-annotations]').forEach(function(wrap) {
-      if (wrap.dataset.annInit) return;
-      wrap.dataset.annInit = '1';
-      var anns; try { anns = JSON.parse(wrap.dataset.annotations); } catch(e) { return; }
-      if (!anns || !anns.length) return;
-
-      if (wrap.dataset.caption) {
-        var cap = document.createElement('span');
-        cap.className = 'ann-caption';
-        cap.textContent = wrap.dataset.caption;
-        wrap.after(cap);
-      }
-
-      var tip = document.createElement('div');
-      tip.className = 'ann-tip';
-      wrap.appendChild(tip);
-
-      var active = null;
-
-      anns.forEach(function(ann) {
-        var style = ann.style || 'number';
-        var dot = document.createElement('div');
-        dot.className = 'ann-dot';
-        dot.style.cssText = '--c:' + (C[style]||'#000') + ';left:' + ann.x + '%;top:' + ann.y + '%';
-        dot.innerHTML = style==='number' ? '<span>'+(ann.index||'')+'</span>'
-                      : style==='letter' ? '<span>'+(ann.letter||'A')+'</span>'
-                      : (I[style]||'');
-
-        function showTip() {
-          tip.innerHTML = (ann.title ? '<div class="ann-tip-title">'+esc(ann.title)+'</div>' : '')
-                        + (ann.body  ? '<div class="ann-tip-body">'+ann.body+'</div>' : '');
-          place(wrap, dot, tip);
-          tip.classList.add('show');
-          active = dot;
-        }
-        function hideTip() { tip.classList.remove('show'); active = null; }
-
-        /* Mouse */
-        dot.addEventListener('mouseenter', showTip);
-        dot.addEventListener('mouseleave', function() {
-          dot._t = setTimeout(function(){ if (!tip.matches(':hover')) hideTip(); }, 80);
-        });
-        tip.addEventListener('mouseenter', function(){ clearTimeout(dot._t); });
-        tip.addEventListener('mouseleave', hideTip);
-
-        /* Touch — tap toggles */
-        dot.addEventListener('touchstart', function(e) {
-          e.preventDefault();
-          active === dot ? hideTip() : (active && hideTip(), showTip());
-        }, { passive: false });
-
-        wrap.appendChild(dot);
+  document.querySelectorAll('.ann[data-a]').forEach(function(wrap){
+    var tip = wrap.querySelector('.ann-tip');
+    JSON.parse(wrap.dataset.a).forEach(function(a){
+      var dot = document.createElement('div');
+      dot.className = 'ann-dot';
+      dot.style.cssText = 'background:' + (C[a.style]||'#000') + ';left:' + (a.x*100) + '%;top:' + (a.y*100) + '%';
+      dot.innerHTML = a.style==='number' ? '<span>'+(a.index||'')+'</span>'
+                    : a.style==='letter' ? '<span>'+(a.letter||'A')+'</span>'
+                    : (I[a.style]||'');
+      dot.addEventListener('mouseenter', function(){
+        tip.textContent = a.title;
+        tip.style.display = 'block';
+        tip.style.left = (a.x*100) + '%';
+        tip.style.top  = 'calc(' + (a.y*100) + '% + 18px)';
       });
-
-      document.addEventListener('touchstart', function(e) {
-        if (!wrap.contains(e.target)) hideTip();
-      }, { passive: true });
+      dot.addEventListener('mouseleave', function(){ tip.style.display = 'none'; });
+      dot.addEventListener('touchstart', function(e){
+        e.preventDefault();
+        tip.style.display = tip.style.display==='block' ? 'none' : 'block';
+        tip.textContent = a.title;
+        tip.style.left = (a.x*100) + '%';
+        tip.style.top  = 'calc(' + (a.y*100) + '% + 18px)';
+      }, {passive:false});
+      wrap.appendChild(dot);
     });
-  }
-
-  function place(wrap, dot, tip) {
-    var ww = wrap.offsetWidth, wh = wrap.offsetHeight;
-    var dh = 13, tw = 200, g = 10; /* dot half-size, tip width, gap */
-    var dx = (parseFloat(dot.style.left)/100)*ww;
-    var dy = (parseFloat(dot.style.top) /100)*wh;
-    var th = tip.offsetHeight || 70;
-    var l, t, d;
-
-    if      (dy + dh + g + th < wh) { t = dy+dh+g;       l = clamp(dx-15, 0, ww-tw); d='down';  }
-    else if (dy - dh - g - th > 0)  { t = dy-dh-g-th;    l = clamp(dx-15, 0, ww-tw); d='up';    }
-    else if (dx + dh + g + tw < ww) { l = dx+dh+g;       t = clamp(dy-10, 0, wh-th); d='right'; }
-    else                             { l = Math.max(0, dx-dh-g-tw); t = clamp(dy-10, 0, wh-th); d='left'; }
-
-    tip.style.left = l+'px'; tip.style.top = t+'px';
-    tip.className = 'ann-tip show d-'+d;
-  }
-
-  function clamp(v,a,b){ return Math.min(Math.max(v,a),b); }
-  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-
-  document.readyState==='loading' ? document.addEventListener('DOMContentLoaded',init) : init();
+  });
 })();
 </script>
 {% endunless %}
 {% assign page.annotated_image_loaded = true %}
 
-<div class="ann-wrap"
-  {% if include.annotations %}data-annotations='{{ include.annotations }}'{% endif %}
-  {% if include.caption     %}data-caption="{{ include.caption }}"{% endif %}>
+<div class="ann" data-a='{{ include.annotations }}'>
   <img src="{{ include.src }}" alt="{{ include.alt | default: '' }}">
+  <div class="ann-tip"></div>
 </div>
+{% if include.caption %}<span class="ann-caption">{{ include.caption }}</span>{% endif %}

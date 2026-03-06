@@ -14,8 +14,6 @@ Rolled right elevator & riveted. Ordered tools & parts from Stein air for trim t
 
 ### Photos
 
-![](/assets/960DBBD6-6964-4DE9-A22D-36B53E72217F.jpg)
-
 ![](/assets/ECAE4FA0-0E47-425E-9EAF-ED05FEAAB4EF.jpg)
 
 ![](/assets/D023A3D9-6690-4305-ADC1-83BD462097F7.jpg)
@@ -25,9 +23,9 @@ Rolled right elevator & riveted. Ordered tools & parts from Stein air for trim t
    alt="Wing spar assembly"
    caption="Fig 1 — Left wing spar, station 45"
    annotations='[
-     { "x": 22, "y": 35, "style": "number",  "index": 1, "title": "Spar cap", "body": "Flanges face <strong>outboard</strong>." },
-     { "x": 55, "y": 60, "style": "warning",             "title": "Pinch point", "body": "Keep clear during assembly." },
-     { "x": 78, "y": 25, "style": "approved",            "title": "Torque OK", "body": "100–140 in-lb, cotter pin installed." }
+     { "x": 0.2, "y": 0.35, "style": "number",  "index": 1, "title": "Spar cap" },
+     { "x": 0.5, "y": 0.60, "style": "warning",             "title": "Pinch point" },
+     { "x": 0.8, "y": 0.25, "style": "approved",            "title": "100–140 in-lb, cotter pin installed." }
    ]'
 %}
 
