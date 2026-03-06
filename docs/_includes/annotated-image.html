@@ -1,345 +1,186 @@
 {% comment %}
   _includes/annotated-image.html
-  ─────────────────────────────────────────────────────────────────────
-  Annotated image component matching KitFlight's AnnotationStyle enum.
 
-  USAGE in any .md post:
-  ──────────────────────
+  USAGE:
   {% include annotated-image.html
-     src="/assets/images/your-photo.jpg"
+     src="/assets/images/photo.jpg"
      alt="Description"
-     caption="Fig 1 — Canopy frame assembly"
+     caption="Fig 1 — Caption text"
      annotations='[
-       { "x": 32, "y": 45, "style": "number",      "index": 1, "title": "Canopy latch",    "body": "Verify travel is <strong>smooth and positive</strong> before final rivet." },
-       { "x": 61, "y": 28, "style": "warning",                 "title": "Pinch point",     "body": "Keep fingers clear during canopy close cycle." },
-       { "x": 75, "y": 60, "style": "approved",                "title": "Torque verified", "body": "AN4 bolts torqued to <strong>100–140 in-lb</strong>. Cotter pins installed." },
-       { "x": 18, "y": 70, "style": "issue",                   "title": "Edge crack",      "body": "Hairline crack found at aft attach point. <strong>Do not rivet.</strong>" },
-       { "x": 50, "y": 15, "style": "information",             "title": "Part number",     "body": "VA-146 per drawing 46A." },
-       { "x": 88, "y": 50, "style": "question",                "title": "Gap acceptable?", "body": "0.032\" gap at aft edge — within tolerance per plans p.46-4?" }
+       { "x": 32, "y": 45, "style": "number",      "index": 1, "title": "Canopy latch",  "body": "Verify travel before final rivet." },
+       { "x": 61, "y": 28, "style": "warning",                 "title": "Pinch point",   "body": "Keep fingers clear during close cycle." },
+       { "x": 75, "y": 60, "style": "approved",                "title": "Torque OK",     "body": "100–140 in-lb. Cotter pins installed." },
+       { "x": 18, "y": 70, "style": "issue",                   "title": "Edge crack",    "body": "Do not rivet. Needs inspection." },
+       { "x": 50, "y": 15, "style": "information",             "title": "Part number",   "body": "VA-146 per drawing 46A." },
+       { "x": 88, "y": 50, "style": "question",                "title": "Gap OK?",       "body": "0.032\" gap — within tolerance?" },
+       { "x": 40, "y": 80, "style": "letter",      "letter": "A", "title": "Rib A",     "body": "Forward-most rib in the assembly." }
      ]'
   %}
 
-  ANNOTATION FIELDS:
-    x, y    — position as % of image (0–100)
-    style   — number | letter | information | warning | issue | question | approved
-    index   — number shown inside dot (style: number only)
-    letter  — letter shown inside dot (style: letter only)
-    title   — tooltip heading
-    body    — tooltip text; <strong> and <em> allowed
-
-  STYLE → COLOR (matches Swift AnnotationStyle.color):
-    number, letter  → black  (#1a1a1a)
-    warning         → orange (#f57c00)
-    issue           → red    (#d32f2f)
-    information     → blue   (#1565c0)
-    question        → blue   (#1565c0)
-    approved        → green  (#2e7d32)
+  style values: number | letter | information | warning | issue | question | approved
 {% endcomment %}
 
 {% unless page.annotated_image_loaded %}
 <style>
-:root {
-  --ann-transition: 150ms cubic-bezier(0.2, 0, 0.1, 1);
-  --ann-tip-width: 230px;
-  --ann-font-ui: ui-monospace, 'SF Mono', 'Fira Mono', 'Courier New', monospace;
-  --ann-font-body: ui-serif, 'Georgia', serif;
-}
+.ann-wrap { position: relative; display: block; line-height: 0; }
+.ann-wrap img { display: block; width: 100%; height: auto; border-radius: 6px; }
 
-.ann-wrap {
-  position: relative;
-  display: block;
-  line-height: 0;
-  user-select: none;
-}
-.ann-wrap img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* ── Dot ─────────────────────────────────────────────────── */
 .ann-dot {
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 26px; height: 26px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.92);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-  cursor: pointer;
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.35);
   transform: translate(-50%, -50%);
-  display: grid;
-  place-items: center;
-  background: var(--dot-color);
-  transition: transform var(--ann-transition), box-shadow var(--ann-transition);
+  display: grid; place-items: center;
+  background: var(--c);
+  cursor: default;
   z-index: 10;
-  padding: 0;
 }
 .ann-dot::before {
   content: '';
   position: absolute;
-  inset: -5px;
-  border-radius: 50%;
-  border: 1.5px solid var(--dot-color);
-  opacity: 0.28;
-  animation: ann-pulse 2.6s ease-in-out infinite;
+  inset: -5px; border-radius: 50%;
+  border: 1.5px solid var(--c);
+  opacity: 0.3;
+  animation: ann-p 2.6s ease-in-out infinite;
 }
-.ann-dot:hover,
-.ann-dot.active {
-  transform: translate(-50%, -50%) scale(1.18);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.28), 0 0 0 3px rgba(255,255,255,0.35);
-}
-.ann-dot.active::before { animation: none; opacity: 0; }
-@keyframes ann-pulse {
-  0%,100% { transform: scale(1);   opacity: 0.28; }
-  60%      { transform: scale(1.8); opacity: 0;    }
+@keyframes ann-p {
+  0%,100% { transform: scale(1);   opacity: 0.3; }
+  60%      { transform: scale(1.8); opacity: 0;   }
 }
 
-.ann-dot-inner {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.ann-dot-inner svg {
-  width: 14px;
-  height: 14px;
-  fill: #fff;
-  display: block;
-}
-.ann-dot-inner span {
-  font-family: var(--ann-font-ui);
-  font-size: 11px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1;
-  letter-spacing: -0.02em;
-}
+.ann-dot svg { width: 13px; height: 13px; fill: #fff; display: block; pointer-events: none; }
+.ann-dot span { font-size: 11px; font-weight: 700; color: #fff; line-height: 1; pointer-events: none; }
 
-/* ── Tooltip ─────────────────────────────────────────────── */
 .ann-tip {
   position: absolute;
-  width: var(--ann-tip-width);
+  width: 200px;
   background: #fff;
   border-radius: 8px;
-  box-shadow:
-    0 4px 6px -1px rgba(0,0,0,0.07),
-    0 10px 22px -4px rgba(0,0,0,0.12),
-    0 0 0 1px rgba(0,0,0,0.07);
-  overflow: hidden;
-  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.06);
+  padding: 9px 11px 10px;
   z-index: 20;
+  pointer-events: none;
   opacity: 0;
-  transform: translateY(4px) scale(0.97);
-  transform-origin: top left;
-  transition: opacity var(--ann-transition), transform var(--ann-transition);
+  transition: opacity 0.15s ease;
 }
-.ann-tip.visible {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
-}
+.ann-tip.show { opacity: 1; }
 
-/* Colored bar at top */
-.ann-tip-bar {
-  height: 3px;
-  background: var(--tip-color);
-}
-
-.ann-tip-content {
-  padding: 9px 12px 11px;
-}
-.ann-tip-header {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 4px;
-}
-.ann-tip-style-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: var(--tip-color);
-}
-.ann-tip-title {
-  font-family: var(--ann-font-ui);
-  font-size: 11.5px;
-  font-weight: 650;
-  color: #0f0f0f;
-  line-height: 1.2;
-}
-.ann-tip-body {
-  font-family: var(--ann-font-body);
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: #444;
-}
-.ann-tip-body strong { color: #111; font-style: normal; }
-.ann-tip-body em     { color: #555; }
+.ann-tip-title { font-size: 12px; font-weight: 600; color: #111; margin-bottom: 3px; }
+.ann-tip-body  { font-size: 12px; line-height: 1.45; color: #555; }
+.ann-tip-body strong { color: #111; }
 
 /* Arrow */
-.ann-tip::after {
+.ann-tip::before {
   content: '';
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 8px; height: 8px;
   background: #fff;
   transform: rotate(45deg);
+  box-shadow: -1px -1px 0 rgba(0,0,0,0.05);
 }
-.ann-tip.dir-down::after  { top: -4px;    left: 17px; box-shadow: -1px -1px 0 rgba(0,0,0,0.05); }
-.ann-tip.dir-up::after    { bottom: -4px; left: 17px; box-shadow:  1px  1px 0 rgba(0,0,0,0.05); }
-.ann-tip.dir-right::after { top: 11px;    left: -4px; box-shadow: -1px  1px 0 rgba(0,0,0,0.05); }
-.ann-tip.dir-left::after  { top: 11px;   right: -4px; box-shadow:  1px -1px 0 rgba(0,0,0,0.05); }
+.ann-tip.d-down::before  { top: -4px;    left: 15px; }
+.ann-tip.d-up::before    { bottom: -4px; left: 15px; box-shadow: 1px 1px 0 rgba(0,0,0,0.05); }
+.ann-tip.d-right::before { top: 10px;    left: -4px; box-shadow: -1px 1px 0 rgba(0,0,0,0.05); }
+.ann-tip.d-left::before  { top: 10px;   right: -4px; box-shadow: 1px -1px 0 rgba(0,0,0,0.05); }
 
-/* ── Caption ─────────────────────────────────────────────── */
-.ann-caption {
-  display: block;
-  font-family: var(--ann-font-ui);
-  font-size: 11px;
-  color: #888;
-  letter-spacing: 0.03em;
-  margin-top: 7px;
-}
+.ann-caption { display: block; font-size: 11px; color: #999; margin-top: 6px; }
 </style>
 
 <script>
-(function () {
-  'use strict';
-
-  var COLOR = {
-    number:      '#1a1a1a',
-    letter:      '#1a1a1a',
-    warning:     '#f57c00',
-    issue:       '#d32f2f',
-    information: '#1565c0',
-    question:    '#1565c0',
-    approved:    '#2e7d32'
+(function(){
+  var C={number:'#1a1a1a',letter:'#1a1a1a',warning:'#f57c00',issue:'#d32f2f',information:'#1565c0',question:'#1565c0',approved:'#2e7d32'};
+  var I={
+    information:'<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm.75 4.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-1.5 3h1.5v5h-1.5V9.5z"/></svg>',
+    warning:    '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm-.75 4.5h1.5v5h-1.5v-5zm.75 7.25a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/></svg>',
+    issue:      '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm2.78 5.22a.75.75 0 0 1 0 1.06L11.06 10l1.72 1.72a.75.75 0 1 1-1.06 1.06L10 11.06l-1.72 1.72a.75.75 0 1 1-1.06-1.06L8.94 10 7.22 8.28a.75.75 0 0 1 1.06-1.06L10 8.94l1.72-1.72a.75.75 0 0 1 1.06 0z"/></svg>',
+    question:   '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm.5 11.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.6-3.2c.05-.28.22-.52.47-.7.82-.59 1.38-1.44 1.38-2.35 0-1.52-1.23-2.75-2.75-2.75S6.25 5.73 6.25 7.25h1.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25c0 .45-.28.88-.75 1.22-.57.41-.97 1.02-1.07 1.72l-.03.31h1.5z"/></svg>',
+    approved:   '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm3.53 5.97-4.25 4.25a.75.75 0 0 1-1.06 0l-1.75-1.75a.75.75 0 1 1 1.06-1.06l1.22 1.22 3.72-3.72a.75.75 0 0 1 1.06 1.06z"/></svg>'
   };
-
-  /* Minimal SVG icons matching SF Symbol intent */
-  var ICON = {
-    information: '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm.75 4.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-1.5 3h1.5v5h-1.5V9.5z"/></svg>',
-    warning:     '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm-.75 4.5h1.5v5h-1.5v-5zm.75 7.25a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/></svg>',
-    issue:       '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm2.78 5.22a.75.75 0 0 1 0 1.06L11.06 10l1.72 1.72a.75.75 0 1 1-1.06 1.06L10 11.06l-1.72 1.72a.75.75 0 1 1-1.06-1.06L8.94 10 7.22 8.28a.75.75 0 0 1 1.06-1.06L10 8.94l1.72-1.72a.75.75 0 0 1 1.06 0z"/></svg>',
-    question:    '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm.5 11.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.6-3.2c.05-.28.22-.52.47-.7.82-.59 1.38-1.44 1.38-2.35 0-1.52-1.23-2.75-2.75-2.75S6.25 5.73 6.25 7.25h1.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25c0 .45-.28.88-.75 1.22-.57.41-.97 1.02-1.07 1.72l-.03.31h1.5z"/></svg>',
-    approved:    '<svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm3.53 5.97-4.25 4.25a.75.75 0 0 1-1.06 0l-1.75-1.75a.75.75 0 1 1 1.06-1.06l1.22 1.22 3.72-3.72a.75.75 0 0 1 1.06 1.06z"/></svg>'
-  };
-
-  var TIP_OFFSET = 12, DOT_HALF = 14, TIP_WIDTH = 230;
 
   function init() {
-    document.querySelectorAll('.ann-wrap[data-annotations]').forEach(build);
-  }
+    document.querySelectorAll('.ann-wrap[data-annotations]').forEach(function(wrap) {
+      if (wrap.dataset.annInit) return;
+      wrap.dataset.annInit = '1';
+      var anns; try { anns = JSON.parse(wrap.dataset.annotations); } catch(e) { return; }
+      if (!anns || !anns.length) return;
 
-  function build(wrap) {
-    if (wrap.dataset.annInit) return;
-    wrap.dataset.annInit = '1';
-
-    var annotations;
-    try { annotations = JSON.parse(wrap.dataset.annotations); } catch (e) { return; }
-    if (!Array.isArray(annotations) || !annotations.length) return;
-
-    var cap = wrap.dataset.caption;
-    if (cap) {
-      var s = document.createElement('span');
-      s.className = 'ann-caption';
-      s.textContent = cap;
-      wrap.after(s);
-    }
-
-    var tip = document.createElement('div');
-    tip.className = 'ann-tip';
-    tip.setAttribute('role', 'tooltip');
-    wrap.appendChild(tip);
-    var active = null;
-
-    annotations.forEach(function (ann) {
-      var style = ann.style || 'number';
-      var color = COLOR[style] || '#1a1a1a';
-
-      var dot = document.createElement('button');
-      dot.className = 'ann-dot';
-      dot.style.setProperty('--dot-color', color);
-      dot.style.left = ann.x + '%';
-      dot.style.top  = ann.y + '%';
-      dot.setAttribute('aria-label', ann.title || style);
-
-      var inner = document.createElement('span');
-      inner.className = 'ann-dot-inner';
-      if      (style === 'number') inner.innerHTML = '<span>' + (ann.index  || '') + '</span>';
-      else if (style === 'letter') inner.innerHTML = '<span>' + (ann.letter || 'A') + '</span>';
-      else                         inner.innerHTML = ICON[style] || '';
-      dot.appendChild(inner);
-
-      function show() {
-        tip.style.setProperty('--tip-color', color);
-        tip.innerHTML =
-          '<div class="ann-tip-bar"></div>' +
-          '<div class="ann-tip-content">' +
-            (ann.title
-              ? '<div class="ann-tip-header">' +
-                  '<div class="ann-tip-style-dot"></div>' +
-                  '<div class="ann-tip-title">' + esc(ann.title) + '</div>' +
-                '</div>' : '') +
-            (ann.body ? '<div class="ann-tip-body">' + ann.body + '</div>' : '') +
-          '</div>';
-        pos(wrap, dot, tip);
-        tip.classList.add('visible');
-        dot.classList.add('active');
-        active = dot;
-      }
-      function hide() {
-        tip.classList.remove('visible');
-        dot.classList.remove('active');
-        active = null;
+      if (wrap.dataset.caption) {
+        var cap = document.createElement('span');
+        cap.className = 'ann-caption';
+        cap.textContent = wrap.dataset.caption;
+        wrap.after(cap);
       }
 
-      dot.addEventListener('click', function (e) {
-        e.stopPropagation();
-        active === dot ? hide() : (active && active.classList.remove('active'), show());
+      var tip = document.createElement('div');
+      tip.className = 'ann-tip';
+      wrap.appendChild(tip);
+
+      var active = null;
+
+      anns.forEach(function(ann) {
+        var style = ann.style || 'number';
+        var dot = document.createElement('div');
+        dot.className = 'ann-dot';
+        dot.style.cssText = '--c:' + (C[style]||'#000') + ';left:' + ann.x + '%;top:' + ann.y + '%';
+        dot.innerHTML = style==='number' ? '<span>'+(ann.index||'')+'</span>'
+                      : style==='letter' ? '<span>'+(ann.letter||'A')+'</span>'
+                      : (I[style]||'');
+
+        function showTip() {
+          tip.innerHTML = (ann.title ? '<div class="ann-tip-title">'+esc(ann.title)+'</div>' : '')
+                        + (ann.body  ? '<div class="ann-tip-body">'+ann.body+'</div>' : '');
+          place(wrap, dot, tip);
+          tip.classList.add('show');
+          active = dot;
+        }
+        function hideTip() { tip.classList.remove('show'); active = null; }
+
+        /* Mouse */
+        dot.addEventListener('mouseenter', showTip);
+        dot.addEventListener('mouseleave', function() {
+          dot._t = setTimeout(function(){ if (!tip.matches(':hover')) hideTip(); }, 80);
+        });
+        tip.addEventListener('mouseenter', function(){ clearTimeout(dot._t); });
+        tip.addEventListener('mouseleave', hideTip);
+
+        /* Touch — tap toggles */
+        dot.addEventListener('touchstart', function(e) {
+          e.preventDefault();
+          active === dot ? hideTip() : (active && hideTip(), showTip());
+        }, { passive: false });
+
+        wrap.appendChild(dot);
       });
-      dot.addEventListener('mouseenter', show);
-      dot.addEventListener('mouseleave', function () {
-        dot._t = setTimeout(function () { if (!tip.matches(':hover')) hide(); }, 90);
-      });
-      tip.addEventListener('mouseenter', function () { clearTimeout(dot._t); });
-      tip.addEventListener('mouseleave', hide);
-      dot.addEventListener('focus', show);
-      dot.addEventListener('blur', hide);
-      dot.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
-      wrap.appendChild(dot);
-    });
 
-    document.addEventListener('click', function (e) {
-      if (!wrap.contains(e.target)) {
-        tip.classList.remove('visible');
-        if (active) { active.classList.remove('active'); active = null; }
-      }
+      document.addEventListener('touchstart', function(e) {
+        if (!wrap.contains(e.target)) hideTip();
+      }, { passive: true });
     });
   }
 
-  function pos(wrap, dot, tip) {
-    var wR = wrap.getBoundingClientRect(), dR = dot.getBoundingClientRect();
-    var dx = dR.left + DOT_HALF - wR.left, dy = dR.top + DOT_HALF - wR.top;
-    var th = tip.offsetHeight || 80, g = TIP_OFFSET;
+  function place(wrap, dot, tip) {
     var ww = wrap.offsetWidth, wh = wrap.offsetHeight;
+    var dh = 13, tw = 200, g = 10; /* dot half-size, tip width, gap */
+    var dx = (parseFloat(dot.style.left)/100)*ww;
+    var dy = (parseFloat(dot.style.top) /100)*wh;
+    var th = tip.offsetHeight || 70;
     var l, t, d;
-    if      (dy + DOT_HALF + g + th < wh) { t = dy + DOT_HALF + g;      l = clamp(dx - 17, 0, ww - TIP_WIDTH); d = 'down';  }
-    else if (dy - DOT_HALF - g - th > 0)  { t = dy - DOT_HALF - g - th; l = clamp(dx - 17, 0, ww - TIP_WIDTH); d = 'up';    }
-    else if (dx + DOT_HALF + g + TIP_WIDTH < ww) { l = dx + DOT_HALF + g;      t = clamp(dy - 11, 0, wh - th); d = 'right'; }
-    else                                   { l = Math.max(0, dx - DOT_HALF - g - TIP_WIDTH); t = clamp(dy - 11, 0, wh - th); d = 'left'; }
-    tip.style.left = l + 'px';
-    tip.style.top  = t + 'px';
-    tip.classList.remove('dir-down', 'dir-up', 'dir-left', 'dir-right');
-    tip.classList.add('dir-' + d);
+
+    if      (dy + dh + g + th < wh) { t = dy+dh+g;       l = clamp(dx-15, 0, ww-tw); d='down';  }
+    else if (dy - dh - g - th > 0)  { t = dy-dh-g-th;    l = clamp(dx-15, 0, ww-tw); d='up';    }
+    else if (dx + dh + g + tw < ww) { l = dx+dh+g;       t = clamp(dy-10, 0, wh-th); d='right'; }
+    else                             { l = Math.max(0, dx-dh-g-tw); t = clamp(dy-10, 0, wh-th); d='left'; }
+
+    tip.style.left = l+'px'; tip.style.top = t+'px';
+    tip.className = 'ann-tip show d-'+d;
   }
 
-  function clamp(v, a, b) { return Math.min(Math.max(v, a), b); }
-  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function clamp(v,a,b){ return Math.min(Math.max(v,a),b); }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+  document.readyState==='loading' ? document.addEventListener('DOMContentLoaded',init) : init();
 })();
 </script>
 {% endunless %}
