@@ -148,6 +148,12 @@ unless page.annotated_image_loaded %}
             );
             wrap.appendChild(dot);
         });
+        wrap.addEventListener("touchstart", function (e) {
+            if (!e.target.closest(".ann-dot")) {
+                tip.style.display = "none";
+                tip._currentAnnotation = null;
+            }
+        });
     }
 </script>
 {% endunless %} {% assign page.annotated_image_loaded = true %} {% assign ann_id
