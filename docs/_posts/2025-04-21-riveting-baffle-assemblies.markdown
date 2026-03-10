@@ -16,7 +16,6 @@ I decided I could proceed with riveting without any new tools, but I am hoping t
 {% include annotated-image.html
    src="/assets/804E2329-23BF-4DAE-832C-C37977897D92.jpg"
    alt=""
-   caption="No description"
    annotations='[
   { "x": 0.2056, "y": 0.3663, "style": "number", "index": 1, "title": "Top item" },
   { "x": 0.5390, "y": 0.6623, "style": "number", "index": 2, "title": "Bottom item" }
@@ -25,7 +24,6 @@ I decided I could proceed with riveting without any new tools, but I am hoping t
 {% include annotated-image.html
    src="/assets/4F5EE779-F4D7-40B1-A179-C83AACF48153.jpg"
    alt=""
-   caption="No description"
    annotations='[
   { "x": 0.2629, "y": 0.3112, "style": "number", "index": 1 },
   { "x": 0.7280, "y": 0.5659, "style": "number", "index": 2 }

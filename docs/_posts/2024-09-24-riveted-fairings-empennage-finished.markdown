@@ -16,24 +16,20 @@ Sep 24, 2024: After all the fiberglass and epoxy and sanding and priming, it was
 {% include annotated-image.html
    src="/assets/66B5516D-D44E-4EDA-B998-F9025370631E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/0C59B1FB-7456-4C61-A9C1-D12ECBFDE28A.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/79D2D85B-0E63-460D-BCF8-A9D1CEA3B784.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/414DA6B1-8E87-4002-9BFE-9F4D19AC850E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

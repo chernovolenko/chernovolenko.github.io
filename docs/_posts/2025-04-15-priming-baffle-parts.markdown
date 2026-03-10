@@ -16,12 +16,10 @@ April 15, 2025: Prepped a small batch of my expired Stewart EkoPoxy for a small 
 {% include annotated-image.html
    src="/assets/1F7A5C2A-6E6E-403D-BD40-A028400B26DF.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/ACFB3A1F-0747-458C-84F1-130416005B7D.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

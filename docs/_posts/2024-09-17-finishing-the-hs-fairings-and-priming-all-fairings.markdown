@@ -16,48 +16,40 @@ Sep 3 - 17, 2024 As I got close to finishing the fiberglass fairings, I decided 
 {% include annotated-image.html
    src="/assets/B9403587-28CA-447F-BF47-5D3947BB1114.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D013AB1A-F371-4C3F-8D8D-DF8948CD6819.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/342CC94F-F72D-4BA7-90AE-4FD180F3E608.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/F9549485-335D-4823-87E7-04DA843AD134.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/DBC9682F-E134-45AA-801C-F0DB5311CFE0.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/9DEC4447-A176-471A-833B-5394ECB53064.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/EE559AE5-A0C5-4AA6-90CB-0637F83AB73B.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/11D293D2-0AC0-4E0A-B0E5-11821012C057.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

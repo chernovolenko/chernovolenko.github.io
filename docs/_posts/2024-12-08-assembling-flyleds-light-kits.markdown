@@ -16,7 +16,6 @@ time_spent: 18000.0
 {% include annotated-image.html
    src="/assets/FE8D676F-EAFD-4066-BD16-E981DD811F75.jpg"
    alt=""
-   caption="No description"
    annotations='[
   { "x": 0.3433, "y": 0.4272, "style": "letter", "letter": "A" },
   { "x": 0.8107, "y": 0.3622, "style": "letter", "letter": "B" }
@@ -25,30 +24,25 @@ time_spent: 18000.0
 {% include annotated-image.html
    src="/assets/F3070631-DA28-4636-BD65-E2115EA1B38C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D7BFCA36-31DD-4859-A583-33914D274630.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D96E469A-6A0E-4E63-9752-E023988126BF.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/6A951EFD-2268-45E3-AA91-AFE0EC5E4573.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/1182566A-C1F5-4149-9562-92E88BA8AF6C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

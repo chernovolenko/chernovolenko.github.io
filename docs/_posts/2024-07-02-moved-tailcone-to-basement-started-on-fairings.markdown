@@ -16,18 +16,15 @@ We don't seem to have any tasks left to do on the empennage tailcone, until the 
 {% include annotated-image.html
    src="/assets/821CE555-10BB-4765-95E3-DE8CB4C80C6C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/42847078-DFA4-44E4-B98C-52E8AB99F306.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C6607ABE-8487-4DAF-97BC-8107763D3C26.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

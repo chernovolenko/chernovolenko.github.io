@@ -16,36 +16,30 @@ April 30 - May 5, 2024 The aft deck riveting was mostly straightforward, and mos
 {% include annotated-image.html
    src="/assets/32D0A863-B764-4815-89CA-D5D0D8059A34.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/6261CDA9-2240-4112-8D45-B5904F194771.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/126B313F-4E22-4177-9700-F242880D1F24.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/81DAD35B-7CEE-4C9D-BCBA-07AC09715E4C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/643D7E00-6023-496F-8CF4-4B8DA702A8B6.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/810D35A8-86B7-44ED-8AB0-BCECD08FA4D0.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

@@ -16,60 +16,50 @@ April 10 - 29, 2024 The aft end of the tailcone had plenty of tricky rivets, whi
 {% include annotated-image.html
    src="/assets/615CA6AE-E556-44C6-912D-B7BB09D27B2C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C56CCC49-8B4C-4B82-9983-6422C3455E90.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/9C829967-4125-4AF6-8CDC-4206C9F694A2.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/3825246F-8D82-4F76-BF00-8EC122D976B3.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/5CC5F840-B8B3-4FA8-BBB6-249504F8CC2B.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/E6BF1645-62DB-44F3-AE61-F23081C87F1D.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/9E015770-1914-4D0A-BBF2-92E87ACFD893.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/017CCB7D-85B2-4542-9DEB-E34B08F13CAB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/451B963C-096F-4F4F-B07B-38FF860350A1.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/ECFAE6EA-BE9D-4086-9321-4079A36A7735.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

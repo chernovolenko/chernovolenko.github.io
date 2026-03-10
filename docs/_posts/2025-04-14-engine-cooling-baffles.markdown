@@ -16,42 +16,35 @@ March 26 - April 14, 2025: I realized that there was a fair bit of work I could 
 {% include annotated-image.html
    src="/assets/581F5DF4-5381-4808-8171-6AC5C4AB3348.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/FF91804F-1D3D-4C9C-9242-BEE160341A31.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/8B235835-35A0-4CFB-AF99-49B275D4FDC8.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/7CFA5AFC-0D99-441E-B0EA-2EE78E276C6A.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/4C9B2FDB-539D-4227-9D57-FB5BA20CAE4F.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/AE66541E-2D69-49EC-9AC4-3D9B6D58055E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/949DBF41-7015-4AA6-B043-4D241397D70D.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

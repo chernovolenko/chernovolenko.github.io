@@ -16,12 +16,10 @@ Elevator balancing is apparently important to maintaining a margin against flutt
 {% include annotated-image.html
    src="/assets/1A20E458-D919-4467-BA14-1B5FACC32AA3.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/E983AD67-A734-47D5-BC62-BC2050865392.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

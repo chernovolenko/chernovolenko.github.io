@@ -16,24 +16,20 @@ We had two days of pretty uninterrupted work, and attacked the vertical stabiliz
 {% include annotated-image.html
    src="/assets/DD1A205C-DE90-4AE8-B59F-DF9930F1DC03.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/90B131DD-39F0-4691-97BE-C2B0277C4FBD.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/2872171E-C4F3-4024-BF7A-0D3D6101A8A5.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/614CAE33-352A-4CA1-82AE-CBAF28B11408.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

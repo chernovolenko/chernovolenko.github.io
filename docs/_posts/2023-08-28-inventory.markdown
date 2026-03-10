@@ -16,6 +16,5 @@ Inventory complete. A few items were missing and Van's was contacted. Hoping to 
 {% include annotated-image.html
    src="/assets/3ED77A0B-E9DA-4BD4-BC4D-B24A54250484.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

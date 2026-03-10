@@ -16,108 +16,90 @@ Nov 29, 2023 - Feb 13, 2024: Well, we got behind with the blogging for a while, 
 {% include annotated-image.html
    src="/assets/F92AEAC5-D4B4-46E3-B444-496101742DAB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/DCCB71F4-CBD9-4163-BF32-B747231E63A1.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/FA1DEC43-AA54-42C5-817C-BDBA116F4828.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/07ED198E-17AB-475A-A0F3-493ACBB4138E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/7ED13192-D5EF-4EEE-BC81-3ACE713B6202.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/7CEDBC84-34C3-4BAA-8D02-8211CFF245FB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/4237199B-70D0-42CA-A318-286AD61AE987.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/6527E090-7E19-46F6-B01E-187E13AAB6A1.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/558AE174-5F28-4D53-B14B-B49D15018F43.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D887D739-B6D3-4693-A5AE-2ED0CD1AA58C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/820D3538-A70F-493D-A95A-A86C7112A7DB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/EAF5EEF9-31F0-4644-9199-F400DDBF4A5D.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/23036063-5351-41E5-97BD-F09A01709E21.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/BE1116D5-FB98-4276-BCA0-447806352B75.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D4802D85-EC76-4F34-8AA9-5DEE5A3F2FDE.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/37323551-37C4-4128-86D7-60D86552BE9D.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/EBEE1293-9C9C-42F2-8126-F4920111A16E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/E6C7D357-32F5-42DC-BEC9-579246D1115F.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

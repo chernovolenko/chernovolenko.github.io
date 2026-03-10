@@ -16,18 +16,15 @@ Feb 27 - March 10 2024 The first part of the tailcone involves a lot of metal pr
 {% include annotated-image.html
    src="/assets/8A949094-7666-4FCB-9E19-46630C0E6CFD.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/A10E887A-3F94-49D7-A250-C63F2AB2B423.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/5DBD4EF3-B337-4F4A-ABFF-B9838AF9B58C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

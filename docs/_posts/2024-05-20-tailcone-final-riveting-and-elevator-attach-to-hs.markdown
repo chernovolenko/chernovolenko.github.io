@@ -16,66 +16,55 @@ May 19-20, 2024: Mary and I finished the final top-skin rivets to complete the t
 {% include annotated-image.html
    src="/assets/C82D5552-E643-414F-888C-BB43EB2ACB3F.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/DA264008-4EC8-4F11-AA8F-58ADB4E2F930.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/4BDD18DF-4736-427F-8FAF-6BB8FBDCF627.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C2766832-B647-4BC6-BB5E-071363ED96D2.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/945E7F08-FC7B-4284-ACCF-54A14DF0D77E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/F8BF8585-8FC8-40DF-BA2F-542BD6ADB0F8.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C83C7880-9F81-495E-83AF-0C6FBBDCC01F.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D8B08828-B3E8-450D-B4E4-94B022C963D4.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/B2F43CE3-2F7A-42FF-A519-AEDADA336159.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/3189AAB8-A945-412F-B154-2E1AB6782613.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C496BB1A-2189-4AFD-B3BA-8D00EF783AC1.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

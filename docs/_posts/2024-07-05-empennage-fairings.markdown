@@ -16,18 +16,15 @@ July 3-5, 2024 Did intial trimming and test-fitting of the rudder top and bottom
 {% include annotated-image.html
    src="/assets/00FEF9C7-2955-4B21-A1B3-908BC5703D60.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/CE52276A-C3E3-4B76-A694-EB4572AC037A.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/1FCF17E9-95C3-488D-B208-4EB89213FF0B.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

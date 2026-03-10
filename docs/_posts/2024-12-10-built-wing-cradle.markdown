@@ -16,24 +16,20 @@ time_spent: 18000.0
 {% include annotated-image.html
    src="/assets/7E6A96A4-C3D1-4DD0-8D3A-A393C503BD6F.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/EBF98F45-3C6A-4CF5-874B-E22DB279F8E4.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/970D968E-5C6D-481A-91E2-8DA22AFD3FF9.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/BE035228-FA74-4712-BC12-450157E8BDEE.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

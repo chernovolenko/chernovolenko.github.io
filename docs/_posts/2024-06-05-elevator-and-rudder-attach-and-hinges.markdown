@@ -16,78 +16,65 @@ May 28-June 4, 2024: I felt kind of stuck and slow during this period, because w
 {% include annotated-image.html
    src="/assets/94DC86E6-E1CA-453D-98A5-5DED197707B1.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/140F51A5-6345-4D25-B5C2-BC463ED376E2.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/3AAAED57-3FFE-4D66-AB52-49D9EC0FBA5C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/9D04B8AF-AF2E-41DD-8604-ABA53FC5F849.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/2B8CB4AE-2223-47CB-B82D-458CD8B033B5.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/B2F846DD-31A0-4613-9507-2D87AE712FFA.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/CDE27EF0-771C-449F-A4BE-CFEC2CB00F31.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/5A4CD0F3-6510-4DC7-A3B4-27C59A6A6F1C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/59C04FEE-F0A9-47EB-82BB-2A111AA7B6F6.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/DBC2CD4C-121F-4712-A389-53059A93858A.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/E7461865-C933-4DDC-A1E6-3E1A32D8A286.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/7E506868-E3A6-411B-BC98-D6FDB5E752D8.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/0AB47AFC-3E72-48F3-812E-334FC2E3A68C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

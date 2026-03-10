@@ -16,36 +16,30 @@ Mary and I (this is Lou typing) made the decision to purchase the RV-14 kit in A
 {% include annotated-image.html
    src="/assets/01CA5956-F3E8-4126-8EBB-058FE69B113A.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/38E4B9BC-1578-4E38-A1C5-B1BD12B24BEB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/EDAD9527-2F50-4B3F-ABDA-5E70A2E434FB.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/2C01B740-D3C3-42BE-B6C1-1C192366A253.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D292014C-EFFE-4DF7-974F-FA4634231509.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/736F8C3E-1066-4BD0-B979-2A6D9D00E428.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

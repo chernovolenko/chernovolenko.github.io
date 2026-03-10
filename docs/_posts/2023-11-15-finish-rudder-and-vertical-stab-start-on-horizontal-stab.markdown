@@ -16,48 +16,40 @@ Oct 9 - Nov 15, 2023 Received all backordered parts. Finished rudder (just neede
 {% include annotated-image.html
    src="/assets/93FBDDB4-3E04-47E0-8716-F4F7DD3AD67C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/74E44116-619C-4367-AB93-B9DB02789E97.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/BED31853-5DAC-4624-8BC1-91256B6342EF.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/44C620C4-392B-4F93-AF16-C991B237618E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/E6E82E3F-978E-4C00-ABFC-EC9186941811.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/20AC06EE-9400-49DF-9FC9-6227250625CF.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/67F16278-D8FF-4721-BCC3-AEC1186E6566.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/A933A74C-F2E0-4D92-9539-2372F1AA798B.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

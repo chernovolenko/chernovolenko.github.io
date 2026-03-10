@@ -22,18 +22,15 @@ Jan 19, 2025: A few days ago we received the Firewall Forward Kit. Seems early t
 {% include annotated-image.html
    src="/assets/1FA56222-8FAC-4A13-AD0E-43CD790D8F92.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/F3D28DED-DBCB-4082-BDE6-EFC30E2C199E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/FBC717D0-4DBB-4779-B1D4-50232AC27484.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

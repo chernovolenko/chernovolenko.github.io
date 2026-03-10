@@ -16,7 +16,6 @@ The baffle parts looked really nice with the Stewart Systems Ekopoxy primer in s
 {% include annotated-image.html
    src="/assets/BF3243A0-5204-425D-A6F8-62392AECF990.jpg"
    alt=""
-   caption="No description"
    annotations='[
   { "x": 0.3275, "y": 0.5101, "style": "number", "index": 1 }
 ]'

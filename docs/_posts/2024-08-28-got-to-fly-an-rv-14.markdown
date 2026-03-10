@@ -14,12 +14,10 @@ August 27: I got to fly in Craig Saxton's beautiful RV-14, which was my first ch
 {% include annotated-image.html
    src="/assets/61807B5B-EB2F-4636-A4DC-168766A96D91.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/8219E733-A04E-4DF7-B49D-B8A81B0DED99.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

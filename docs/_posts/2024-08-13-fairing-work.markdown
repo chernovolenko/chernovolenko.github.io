@@ -16,36 +16,30 @@ July 9- Aug 13: I've definitely slowed down the pace of work recently, since we 
 {% include annotated-image.html
    src="/assets/483CB332-9849-48BC-A934-29CD8709F983.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/545A5393-3FC4-4324-BE6E-A57DD31ACC67.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D2C98EFC-C3CF-4103-A2EE-05E503E54DE4.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C9F53B2C-C1A8-409B-B3B4-9E35962C0CA0.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/BA8EA9CA-FD84-401D-B7BF-B711A3B8724C.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D8A13154-9BE5-412B-AED6-B781B8B81865.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}

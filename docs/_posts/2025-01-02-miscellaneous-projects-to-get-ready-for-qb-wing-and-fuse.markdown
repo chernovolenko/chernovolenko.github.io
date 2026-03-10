@@ -16,42 +16,35 @@ time_spent: 18000.0
 {% include annotated-image.html
    src="/assets/58CD6330-49B2-46AB-9328-F32F3A777966.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/45BF0644-5ACA-4DDC-8585-382E09E51FB0.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/1F35CC3D-DBE4-4C7A-8BBA-AE43B3E61D2E.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C33B430C-64FC-4EDF-9392-97C3E06489CD.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/BA9189A8-4578-489B-8B77-2E1BD4267EB2.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/5742FEFD-48EA-495A-891C-E5F02C523E31.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/D8E459F5-74B9-4141-A611-F48750D0CC35.jpg"
    alt=""
-   caption="No description"
    annotations='[]'
 %}
