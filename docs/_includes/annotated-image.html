@@ -19,10 +19,10 @@ unless page.annotated_image_loaded %}
     }
     .ann-dot {
         position: absolute;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
-        border: 3px solid #fff;
+        border: 2px solid #fff;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
         display: grid;
         place-items: center;
@@ -33,7 +33,6 @@ unless page.annotated_image_loaded %}
     .ann-dot svg {
         width: 24px;
         height: 24px;
-        fill: #fff;
         pointer-events: none;
     }
     .ann-dot span {
@@ -67,6 +66,8 @@ unless page.annotated_image_loaded %}
     var C = {
         number: "#1a1a1a",
         letter: "#1a1a1a",
+    };
+    var F = {
         warning: "#f57c00",
         issue: "#d32f2f",
         information: "#1565c0",
@@ -91,7 +92,7 @@ unless page.annotated_image_loaded %}
         annotations.forEach(function (a) {
             var dot = document.createElement("div");
             dot.className = "ann-dot";
-            dot.style.background = C[a.style] || "#000";
+            dot.style.background = C[a.style] || "#fff";
             dot.style.left = a.x * 100 + "%";
             dot.style.top = a.y * 100 + "%";
             dot.innerHTML =
@@ -100,6 +101,8 @@ unless page.annotated_image_loaded %}
                     : a.style === "letter"
                       ? "<span>" + (a.letter || "A") + "</span>"
                       : I[a.style] || "";
+            var svg = dot.querySelector("svg");
+            if (svg) svg.style.fill = F[a.style] || "#fff";
             dot.addEventListener("mouseenter", function () {
                 tip.textContent = a.title;
                 tip.style.display = "block";
