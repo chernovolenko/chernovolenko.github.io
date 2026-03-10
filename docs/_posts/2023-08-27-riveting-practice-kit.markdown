@@ -9,9 +9,6 @@ summary: "Still learning the challenges of setting rivets in tight spaces."
 reference: ""
 time_spent: 9000.0
 ---
-
-# Riveting practice kit
-
 Still learning the challenges of setting rivets in tight spaces.
 
 Time spent: 2hr 30min

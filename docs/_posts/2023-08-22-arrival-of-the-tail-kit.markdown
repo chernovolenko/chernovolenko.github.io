@@ -9,9 +9,6 @@ summary: "The tail kit arrived by semi. This is becoming real."
 reference: ""
 time_spent: 0.0
 ---
-
-# Arrival of the Tail Kit
-
 The tail kit arrived by semi. This is becoming real.
 
 ### Photos
