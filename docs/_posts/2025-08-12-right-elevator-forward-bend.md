@@ -25,7 +25,7 @@ Rolled right elevator & riveted. Ordered tools & parts from Stein air for trim t
    annotations='[
      { "x": 0.2, "y": 0.35, "style": "number",  "index": 1, "title": "Spar cap" },
      { "x": 0.5, "y": 0.60, "style": "warning",             "title": "Pinch point" },
-     { "x": 0.8, "y": 0.25, "style": "approved",            "title": "100–140 in-lb, cotter pin installed." }
+     { "x": 0.8, "y": 0.25, "style": "approved",            "title": "100–140 in-lb, cotter pin installed. 100–140 in-lb, cotter pin installed. 100–140 in-lb, cotter pin installed." }
    ]'
 %}
 
