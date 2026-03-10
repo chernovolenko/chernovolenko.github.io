@@ -15,27 +15,21 @@ Time spent: 20hr
 
 ### Photos
 
-{% include annotated-image.html
+ {% include annotated-image-init.html %}{% include annotated-image.html
    src="/assets/7D0D97C5-2C25-4505-A517-24100B6E2C1F.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/0FCD23CA-FB86-4057-887C-89167DE1141E.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/81BBFA08-9FEE-4EB3-B511-E228DFCE2D65.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}

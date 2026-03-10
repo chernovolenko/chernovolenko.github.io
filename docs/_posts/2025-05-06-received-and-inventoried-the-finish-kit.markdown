@@ -19,10 +19,10 @@ Time spent: 13hr
 
 ### Photos
 
-{% include annotated-image.html
+ {% include annotated-image-init.html %}{% include annotated-image.html
    src="/assets/FD9C16F4-C35F-480F-81E3-F30EA5DD30FE.jpg"
    alt=""
-   caption=""
+   caption="No description"
    annotations='[
   { "x": 0.3881, "y": 0.4032, "style": "number", "index": 1, "title": "Not a damage, but the foil was ripped. Canopy wasn’t affected though." },
   { "x": 0.5879, "y": 0.5914, "style": "number", "index": 2 }
@@ -43,7 +43,7 @@ Time spent: 13hr
 {% include annotated-image.html
    src="/assets/3CF4E33C-2C38-4D94-B171-061F5E214E04.jpg"
    alt=""
-   caption=""
+   caption="No description"
    annotations='[
   { "x": 0.3400, "y": 0.5146, "style": "number", "index": 1 },
   { "x": 0.8665, "y": 0.6352, "style": "number", "index": 2 },
@@ -53,7 +53,7 @@ Time spent: 13hr
 {% include annotated-image.html
    src="/assets/A9DF6C71-9F6D-4CE6-9502-53D83BBFDAD6.jpg"
    alt=""
-   caption=""
+   caption="No description"
    annotations='[
   { "x": 0.4104, "y": 0.5845, "style": "number", "index": 1, "title": "Small hole" },
   { "x": 0.5199, "y": 0.3845, "style": "number", "index": 2, "title": "Watch out ⚠️ this can damage a part easily " }

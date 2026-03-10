@@ -15,99 +15,75 @@ Time spent: 19hr
 
 ### Photos
 
-{% include annotated-image.html
+ {% include annotated-image-init.html %}{% include annotated-image.html
    src="/assets/68197FEA-ADA8-4E87-AFF2-B3E62C5FE2D1.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/4C54883F-1CFD-4650-A0B5-680AB4E24BC8.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/94E6F011-235D-42CF-986D-D3C4FA15D17B.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/908A4BDE-0940-42E1-B9FA-EB03AC15012A.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/21832B56-8162-4B04-93EC-48BD5634ABCF.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/C79D397D-3B67-43E3-9E1A-5BDB20694296.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/A028FE71-612F-41FA-A66A-1E599B404A17.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/F90334A6-3E25-41A5-8BA7-FD5126E6BAA3.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/94B1D07B-8F07-475B-A037-50E930CA239D.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/73862563-6C69-4F9F-9966-21C59F0FD6A0.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/5E67B90F-B521-44F8-AE14-66A2076CAD61.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/60C84F35-F28E-4295-921F-AB63F0074F9C.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}

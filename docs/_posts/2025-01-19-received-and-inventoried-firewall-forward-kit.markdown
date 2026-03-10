@@ -15,35 +15,27 @@ Time spent: 5hr
 
 ### Photos
 
-{% include annotated-image.html
+ {% include annotated-image-init.html %}{% include annotated-image.html
    src="/assets/660C8988-3E52-4143-B1C2-8C64AC195099.jpg"
-   alt=""
-   caption=""
-   annotations='[
-  
-]'
+   alt="Some tubes pic"
+   caption="Some tubes pic"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/1FA56222-8FAC-4A13-AD0E-43CD790D8F92.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/F3D28DED-DBCB-4082-BDE6-EFC30E2C199E.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/FBC717D0-4DBB-4779-B1D4-50232AC27484.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}

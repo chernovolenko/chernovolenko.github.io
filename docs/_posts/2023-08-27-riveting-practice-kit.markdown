@@ -15,19 +15,15 @@ Time spent: 2hr 30min
 
 ### Photos
 
-{% include annotated-image.html
+ {% include annotated-image-init.html %}{% include annotated-image.html
    src="/assets/A8429A70-827A-4F4E-B05D-14168399A707.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
 {% include annotated-image.html
    src="/assets/2C0227B9-9A2A-4CBE-8ABD-1F2510FB4F23.jpg"
    alt=""
-   caption=""
-   annotations='[
-  
-]'
+   caption="No description"
+   annotations='[]'
 %}
