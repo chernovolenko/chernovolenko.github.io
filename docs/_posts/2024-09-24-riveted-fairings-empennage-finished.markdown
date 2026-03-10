@@ -5,20 +5,14 @@ date: 2024-09-23T22:00:00Z
 categories: [Work Log]
 tags: []
 contributors: []
-summary: |
-  Sep 24, 2024: After all the fiberglass and epoxy and sanding and priming, it was very quick and simple to pop-rivet the fairings into place on the empennage control surfaces. I also temporarily screwed on the rudder bottom fairing. With this complete, the empennage is finished! And all the empennage parts are stored in the basement, so the garage is empty and ready to receive the wings and fuselage, sometime in the next few months, hopefully Next tasks: Clean garage (very dusty from all the sanding) Read forward in wing and fuselage plans Work on avionics plan Pick an N-number Get a quote on interior parts Work on paint design Communicate with paint shop?
-"
 reference: ""
 time_spent: 7200.0
 ---
 Sep 24, 2024: After all the fiberglass and epoxy and sanding and priming, it was very quick and simple to pop-rivet the fairings into place on the empennage control surfaces. I also temporarily screwed on the rudder bottom fairing. With this complete, the empennage is finished! And all the empennage parts are stored in the basement, so the garage is empty and ready to receive the wings and fuselage, sometime in the next few months, hopefully Next tasks: Clean garage (very dusty from all the sanding) Read forward in wing and fuselage plans Work on avionics plan Pick an N-number Get a quote on interior parts Work on paint design Communicate with paint shop?
 
-Time spent: 2hr
-
-### Photos
+*Time spent*: 2hr
 
 {% include annotated-image-init.html %}
-
 {% include annotated-image.html
    src="/assets/66B5516D-D44E-4EDA-B998-F9025370631E.jpg"
    alt=""
