@@ -4,8 +4,8 @@ annotations='[ { "x": 0.2, "y": 0.35, "style": "number", "index": 1, "title":
 "Spar cap" }, { "x": 0.5, "y": 0.60, "style": "warning", "title": "Pinch point"
 }, { "x": 0.8, "y": 0.25, "style": "approved", "title": "Torque OK" } ]' %} x,
 y: 0–1 fractions. style:
-number|letter|information|warning|issue|question|approved {% endcomment %} {%
-unless page.annotated_image_loaded %}
+number|letter|information|warning|issue|question|approved {% endcomment %}
+{% unless page.annotated_image_loaded %}
 <style>
     .ann {
         position: relative;
@@ -54,7 +54,6 @@ unless page.annotated_image_loaded %}
         white-space: nowrap;
         pointer-events: none;
         z-index: 20;
-        transform: translateX(-50%);
     }
     .ann-caption {
         display: block;
@@ -86,6 +85,27 @@ unless page.annotated_image_loaded %}
         approved:
             '<svg viewBox="2 2 16 16" width="24" height="24"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm3.53 5.97-4.25 4.25a.75.75 0 0 1-1.06 0l-1.75-1.75a.75.75 0 1 1 1.06-1.06l1.22 1.22 3.72-3.72a.75.75 0 0 1 1.06 1.06z"/></svg>',
     };
+    function showTip(tip, a, wrap) {
+        tip.textContent = a.title;
+        tip.style.left = "0px";
+        tip.style.top = "0px";
+        tip.style.display = "block";
+
+        var wrapW = wrap.offsetWidth;
+        var wrapH = wrap.offsetHeight;
+        var tipW = tip.offsetWidth;
+        var tipH = tip.offsetHeight;
+
+        var dotX = a.x * wrapW;
+        var dotY = a.y * wrapH;
+
+        var left = Math.min(Math.max(dotX - tipW / 2, 4), wrapW - tipW - 4);
+        var top = dotY + 20;
+        if (top + tipH > wrapH - 4) top = dotY - tipH - 16;
+
+        tip.style.left = left + "px";
+        tip.style.top = top + "px";
+    }
     function annBuild(id, annotations) {
         var wrap = document.getElementById(id);
         if (!wrap) return;
@@ -105,10 +125,7 @@ unless page.annotated_image_loaded %}
             var svg = dot.querySelector("svg");
             if (svg) svg.style.fill = F[a.style] || "#fff";
             dot.addEventListener("mouseenter", function () {
-                tip.textContent = a.title;
-                tip.style.display = "block";
-                tip.style.left = a.x * 100 + "%";
-                tip.style.top = "calc(" + a.y * 100 + "% + 20px)";
+                showTip(tip, a, wrap);
             });
             dot.addEventListener("mouseleave", function () {
                 tip.style.display = "none";
@@ -121,10 +138,7 @@ unless page.annotated_image_loaded %}
                         tip.style.display = "none";
                         return;
                     }
-                    tip.textContent = a.title;
-                    tip.style.display = "block";
-                    tip.style.left = a.x * 100 + "%";
-                    tip.style.top = "calc(" + a.y * 100 + "% + 20px)";
+                    showTip(tip, a, wrap);
                 },
                 { passive: false },
             );
@@ -132,14 +146,14 @@ unless page.annotated_image_loaded %}
         });
     }
 </script>
-{% endunless %} {% assign page.annotated_image_loaded = true %} {% assign ann_id
-= include.src | slugify %}
+{% endunless %}
+{% assign page.annotated_image_loaded = true %}
+{% assign ann_id = include.src | slugify %}
 <div class="ann" id="ann-{{ ann_id }}">
     <img src="{{ include.src }}" alt="{{ include.alt | default: '' }}" />
     <div class="ann-tip"></div>
 </div>
-{% if include.caption %}<span class="ann-caption">{{ include.caption }}</span>{%
-endif %}
+{% if include.caption %}<span class="ann-caption">{{ include.caption }}</span>{% endif %}
 <script>
     annBuild("ann-{{ ann_id }}", {{ include.annotations }});
 </script>
