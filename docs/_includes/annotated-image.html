@@ -136,10 +136,12 @@ unless page.annotated_image_loaded %}
                 "touchstart",
                 function (e) {
                     e.preventDefault();
-                    if (tip.style.display === "block") {
+                    if (tip._currentAnnotation === a) {
                         tip.style.display = "none";
+                        tip._currentAnnotation = null;
                         return;
                     }
+                    tip._currentAnnotation = a;
                     showTip(tip, a, wrap);
                 },
                 { passive: false },
