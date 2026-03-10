@@ -120,7 +120,7 @@
             var svg = dot.querySelector("svg");
             if (svg) svg.style.fill = F[a.style] || "#fff";
             dot.addEventListener("mouseenter", function () {
-                showTip(tip, a, wrap);
+                if (a.title) showTip(tip, a, wrap);
             });
             dot.addEventListener("mouseleave", function () {
                 tip.style.display = "none";
@@ -129,6 +129,7 @@
                 "touchstart",
                 function (e) {
                     e.preventDefault();
+                    if (!a.title) return;
                     if (tip._currentAnnotation === a) {
                         tip.style.display = "none";
                         tip._currentAnnotation = null;
