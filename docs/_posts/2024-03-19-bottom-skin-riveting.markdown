@@ -5,7 +5,9 @@ date: 2024-03-18T23:00:00Z
 categories: [Work Log]
 tags: []
 contributors: []
-summary: "March 11 - 19, 2024 With the bulkheads ready to go, the next step is to rivet them and some stiffeners to the bottom skin. While prepping that stuff, we also prepped and primed the side skins, longerons, and other tailcone parts. A pretty laborious task is trimming the thick aft bottom skin to make it into a taildragger skin. I did it all with tin snips and files and sandpaper, and it came out OK after looking awful initially!"
+summary: |
+  March 11 - 19, 2024 With the bulkheads ready to go, the next step is to rivet them and some stiffeners to the bottom skin. While prepping that stuff, we also prepped and primed the side skins, longerons, and other tailcone parts. A pretty laborious task is trimming the thick aft bottom skin to make it into a taildragger skin. I did it all with tin snips and files and sandpaper, and it came out OK after looking awful initially!
+"
 reference: ""
 time_spent: 75600.0
 ---
@@ -15,7 +17,9 @@ Time spent: 21hr
 
 ### Photos
 
- {% include annotated-image-init.html %}{% include annotated-image.html
+{% include annotated-image-init.html %}
+
+{% include annotated-image.html
    src="/assets/B07745CF-A59C-4406-9C9E-1D093B93D147.jpg"
    alt=""
    caption="No description"

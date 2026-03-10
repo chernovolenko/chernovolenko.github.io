@@ -5,7 +5,9 @@ date: 2024-09-01T22:00:00Z
 categories: [Work Log]
 tags: []
 contributors: []
-summary: "September 2, 2024: The VS fairing looked quite rough after the first layer of peanut-butter. Sanded it smooth, and applied a 2nd layer of epoxy/balloons with honey consistency. Starting to look much better. Also did the 3rd step with pure epoxy. Final sanding still to go, hopefully it will be ready (along with rudder fairings) for priming after this! Also started on the elevator fairings. These fairings (and the rudder top fairing) generally fit much better than did the VS fairing, so I'm only fairing in the parts that had some distortions out of the mold. Got the first step of peanut-butter fairing compound applied. Hopefully this will go faster now that I've got some experience doing this on the VS fairing."
+summary: |
+  September 2, 2024: The VS fairing looked quite rough after the first layer of peanut-butter. Sanded it smooth, and applied a 2nd layer of epoxy/balloons with honey consistency. Starting to look much better. Also did the 3rd step with pure epoxy. Final sanding still to go, hopefully it will be ready (along with rudder fairings) for priming after this! Also started on the elevator fairings. These fairings (and the rudder top fairing) generally fit much better than did the VS fairing, so I'm only fairing in the parts that had some distortions out of the mold. Got the first step of peanut-butter fairing compound applied. Hopefully this will go faster now that I've got some experience doing this on the VS fairing.
+"
 reference: ""
 time_spent: 41400.0
 ---
@@ -15,7 +17,9 @@ Time spent: 11hr 30min
 
 ### Photos
 
- {% include annotated-image-init.html %}{% include annotated-image.html
+{% include annotated-image-init.html %}
+
+{% include annotated-image.html
    src="/assets/D2BD8BBE-ABBB-4E10-9D1A-250532714B03.jpg"
    alt=""
    caption="No description"

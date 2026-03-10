@@ -5,7 +5,9 @@ date: 2025-04-13T22:00:00Z
 categories: [Work Log]
 tags: []
 contributors: []
-summary: "March 26 - April 14, 2025: I realized that there was a fair bit of work I could do in the Firewall Forward kit that arrived a few months ago, while in a holding pattern waiting for wing and fuselage. I can work on the prop spinner and backing plate, and also the cooling baffles. When the Finish kit arrives (expected in early May), that will also give some opportunities to work on various metal parts prep, the seat backs, and oil cooling inlet. So, hopefully I can keep working on this stuff at a relaxed pace while waiting for wing and fuse, and get a head start on some significant tasks. So, I spent about 20 hours working on the cooling baffles and hardware, and now that stuff is all ready for priming. I need to do a test run of Stewart Ekopoxy primer, since it has exceeded its shelf life. I am also planning to paint the baffles white with a high-temp engine paint. Then I'll have a bunch of riveting to do to assemble the various baffle components."
+summary: |
+  March 26 - April 14, 2025: I realized that there was a fair bit of work I could do in the Firewall Forward kit that arrived a few months ago, while in a holding pattern waiting for wing and fuselage. I can work on the prop spinner and backing plate, and also the cooling baffles. When the Finish kit arrives (expected in early May), that will also give some opportunities to work on various metal parts prep, the seat backs, and oil cooling inlet. So, hopefully I can keep working on this stuff at a relaxed pace while waiting for wing and fuse, and get a head start on some significant tasks. So, I spent about 20 hours working on the cooling baffles and hardware, and now that stuff is all ready for priming. I need to do a test run of Stewart Ekopoxy primer, since it has exceeded its shelf life. I am also planning to paint the baffles white with a high-temp engine paint. Then I'll have a bunch of riveting to do to assemble the various baffle components.
+"
 reference: ""
 time_spent: 81000.0
 ---
@@ -15,7 +17,9 @@ Time spent: 22hr 30min
 
 ### Photos
 
- {% include annotated-image-init.html %}{% include annotated-image.html
+{% include annotated-image-init.html %}
+
+{% include annotated-image.html
    src="/assets/581F5DF4-5381-4808-8171-6AC5C4AB3348.jpg"
    alt=""
    caption="No description"
