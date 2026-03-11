@@ -57,12 +57,12 @@
     }
     .ann-wm {
         position: absolute;
-        bottom: 7px;
+        bottom: 6px;
         left: 8px;
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.75);
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0 0px 2px rgba(0, 0, 0, 0.8);
         letter-spacing: 0.02em;
         pointer-events: auto;
         z-index: 10;
@@ -120,7 +120,7 @@
         var tip = wrap.querySelector(".ann-tip");
         var wm = document.createElement("div");
         wm.className = "ann-wm";
-        wm.innerHTML = '<a href="https://apps.apple.com/us/app/kitflight/id6670708403" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">KitFlight.com</a>';
+        wm.innerHTML = '<a href="https://kitflight.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">KitFlight Builder App</a>';
         wrap.appendChild(wm);
         annotations.forEach(function (a) {
             var dot = document.createElement("div");

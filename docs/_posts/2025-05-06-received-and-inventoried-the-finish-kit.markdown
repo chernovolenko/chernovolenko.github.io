@@ -26,16 +26,11 @@ May 4-6, 2025. Got back from the Colombia wedding last week! It was great but ex
 ]'
 %}
 {% include annotated-image.html
-   src="/assets/41452946-B33D-4650-8BED-9BA2B4983F74.jpg"
-   alt="Wings subkit from Van’s Aircraft"
-   caption="Wings subkit from Van’s Aircraft"
+   src="/assets/A9DF6C71-9F6D-4CE6-9502-53D83BBFDAD6.jpg"
+   alt=""
    annotations='[
-  { "x": 0.3209, "y": 0.1878, "style": "letter", "letter": "A", "title": "The desk" },
-  { "x": 0.0821, "y": -0.0775, "style": "number", "index": 1 },
-  { "x": 0.7562, "y": 0.2188, "style": "number", "index": 2 },
-  { "x": 0.0771, "y": -0.0730, "style": "number", "index": 3 },
-  { "x": 0.0738, "y": -0.0730, "style": "number", "index": 4 },
-  { "x": 0.4677, "y": 0.6153, "style": "number", "index": 5, "title": "A box full of parts" }
+  { "x": 0.4104, "y": 0.5845, "style": "number", "index": 1, "title": "Small hole" },
+  { "x": 0.5199, "y": 0.3845, "style": "number", "index": 2, "title": "Watch out ⚠️ this can damage a part easily" }
 ]'
 %}
 {% include annotated-image.html
@@ -45,13 +40,5 @@ May 4-6, 2025. Got back from the Colombia wedding last week! It was great but ex
   { "x": 0.3400, "y": 0.5146, "style": "number", "index": 1 },
   { "x": 0.8665, "y": 0.6352, "style": "number", "index": 2 },
   { "x": 0.6650, "y": 0.8509, "style": "number", "index": 3 }
-]'
-%}
-{% include annotated-image.html
-   src="/assets/A9DF6C71-9F6D-4CE6-9502-53D83BBFDAD6.jpg"
-   alt=""
-   annotations='[
-  { "x": 0.4104, "y": 0.5845, "style": "number", "index": 1, "title": "Small hole" },
-  { "x": 0.5199, "y": 0.3845, "style": "number", "index": 2, "title": "Watch out ⚠️ this can damage a part easily" }
 ]'
 %}
