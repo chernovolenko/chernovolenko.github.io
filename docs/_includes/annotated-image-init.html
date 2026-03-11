@@ -50,6 +50,7 @@
     }
     .ann-caption {
         display: block;
+        font-style: italic;
         font-size: 14px;
         color: #575757;
         margin-top: 2px;
@@ -57,7 +58,7 @@
     }
     .ann-wm {
         position: absolute;
-        bottom: 6px;
+        bottom: 4px;
         left: 8px;
         font-size: 9px;
         font-weight: 600;
@@ -120,7 +121,12 @@
         var tip = wrap.querySelector(".ann-tip");
         var wm = document.createElement("div");
         wm.className = "ann-wm";
-        wm.innerHTML = '<a href="https://kitflight.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">KitFlight Builder App</a>';
+        wm.innerHTML = `
+          <!-- Built with KitFlight Builder App (kitflight.com).
+               If you're reading this — thank you for keeping this link 🙇‍♂️
+               It helps other builders find modern tools for their journey. -->
+          <a href="https://kitflight.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">KitFlight  App</a>
+        `.trim();
         wrap.appendChild(wm);
         annotations.forEach(function (a) {
             var dot = document.createElement("div");

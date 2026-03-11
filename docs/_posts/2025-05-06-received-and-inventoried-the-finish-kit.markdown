@@ -10,11 +10,10 @@ time_spent: 46800.0
 ---
 May 4-6, 2025. Got back from the Colombia wedding last week! It was great but exhausting! We received a big crate of Finish Kit stuff, such as engine cowlings and canopy and tailwheel mount and tire, engine mount and landing gear, etc. A few parts were missing or back-ordered, but I trust Vans to make good on those soon enough. It took a good 8 or 10 hours to carefully inventory and then stow things away. I put the engine cowlings and canopy plastics in the garage attic, everything else in the basement. There didn't seem to be any damage in the shipment. The canopy is covered in plastic/adhesive, and had rubbed against the fiberglass cowlings. I was afraid there might be some abrasion, but it was basically just some of the adhesive that smeared onto the canopy, and it cleaned right up with isopropyl alcohol. I mentioned in the last post that I wanted to try riveting with a long back-rivet set in the C-frame. Cleaveland came through with the 12" back-rivet set (was on back-order), and a kit to turn the old Avery C-frame into a more useful riveting tool. I had to drill out the center hole in the steel base of the C-frame to 3/4" diameter. I thought this would be a big challenge, but it was really easy with the Unibit step drill and some machining oil, on the drill press which was slowed way down. Still waiting on the Cleaveland parts, but I'm hoping this setup will make a lot of the cooling baffle riveting go faster. Time to get back onto the cooling baffle rivets, hopfully can finish those soon.
 
-*Time spent*: 13hr
+***Time spent***: 13hr
 
-### Participants
-- Åberg (45min)
-- Alfons (1hr 30min)
+- ***Åberg*** (45min)
+- ***Alfons*** (1hr 30min)
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html

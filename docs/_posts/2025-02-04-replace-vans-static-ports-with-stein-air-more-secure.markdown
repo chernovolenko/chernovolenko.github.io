@@ -10,7 +10,7 @@ time_spent: 10800.0
 ---
 2/4/2025: While building the tailcone, I installed the stock Van's static ports, which are basically just pop-rivets with the mandrel punched out, and 1/4" OD tubing sealed to the rivet shank with RTV. It's cheap and effective, and seems to work fine and accurately in thousands of RV's. But, when I ordered a bunch of avionics components (like AP servos and antennas, etc), Stein Air also included their more robust static ports (made by "Show Planes" in Oregon). And since I had nothing else to do while STILL WAITING for QB wing and fuselage (still no word on a delivery date), I decided to upgrade the static plumbing to use the more heavy-duty Stein parts, which are secured with lock-washer and nut, and have identical exterior profile. Photos show the before-and-after. I feel like the new system is much more mechanically robust (less likely for a static tube to disconnect), but I hope the push-in tube fittings seal Ok for the long term.
 
-*Time spent*: 3hr
+***Time spent***: 3hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html

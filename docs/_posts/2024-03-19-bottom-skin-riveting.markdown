@@ -10,7 +10,7 @@ time_spent: 75600.0
 ---
 March 11 - 19, 2024 With the bulkheads ready to go, the next step is to rivet them and some stiffeners to the bottom skin. While prepping that stuff, we also prepped and primed the side skins, longerons, and other tailcone parts. A pretty laborious task is trimming the thick aft bottom skin to make it into a taildragger skin. I did it all with tin snips and files and sandpaper, and it came out OK after looking awful initially!
 
-*Time spent*: 21hr
+***Time spent***: 21hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html

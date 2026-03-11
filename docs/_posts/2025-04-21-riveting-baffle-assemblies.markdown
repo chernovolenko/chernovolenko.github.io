@@ -10,7 +10,7 @@ time_spent: 18000.0
 ---
 I decided I could proceed with riveting without any new tools, but I am hoping to get a 12" back rivet set to use on the C-frame (back-ordered at Cleaveland), and maybe a few other longer rivet sets also (like 12" long round head for 3/32" and 1/8"). Other than a few nutplates on the air filter frame, this was the first really significant amount of riveting I've done for a while. And I was definitely out of practice. And while a lot of the rivets could be easily squeezed, there were quite a few that had to be bucked with the gun, and with various attachments like double-offset. A few had to be drilled out and replaced. So, it took a while, but I finished one of the major baffle assemblies, and I think there are three or four more to go. After finishing the baffle assemblies, next up is surgery on the prop spinner and backplate. Then maybe some stuff in the finishing kit, while still waiting for wing and fuse. Off to Colombia tonight for Martin's wedding!
 
-*Time spent*: 5hr
+***Time spent***: 5hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html

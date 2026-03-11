@@ -10,7 +10,7 @@ time_spent: 9000.0
 ---
 Still learning the challenges of setting rivets in tight spaces.
 
-*Time spent*: 2hr 30min
+***Time spent***: 2hr 30min
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html
