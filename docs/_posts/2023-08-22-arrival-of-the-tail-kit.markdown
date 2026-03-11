@@ -16,8 +16,10 @@ The tail kit arrived by semi. This is becoming real.
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/4ADBDE93-D315-4249-B2BC-B905A8C43CA3.jpg"
    alt=""
    annotations='[]'
 %}
+

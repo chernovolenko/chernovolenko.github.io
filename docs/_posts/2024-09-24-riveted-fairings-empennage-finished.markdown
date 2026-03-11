@@ -10,7 +10,7 @@ time_spent: 7200.0
 ---
 Sep 24, 2024: After all the fiberglass and epoxy and sanding and priming, it was very quick and simple to pop-rivet the fairings into place on the empennage control surfaces. I also temporarily screwed on the rudder bottom fairing. With this complete, the empennage is finished! And all the empennage parts are stored in the basement, so the garage is empty and ready to receive the wings and fuselage, sometime in the next few months, hopefully Next tasks: Clean garage (very dusty from all the sanding) Read forward in wing and fuselage plans Work on avionics plan Pick an N-number Get a quote on interior parts Work on paint design Communicate with paint shop?
 
-***Time spent***: 2hr
+**Time spent**: 2hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html
@@ -18,18 +18,22 @@ Sep 24, 2024: After all the fiberglass and epoxy and sanding and priming, it was
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/0C59B1FB-7456-4C61-A9C1-D12ECBFDE28A.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/79D2D85B-0E63-460D-BCF8-A9D1CEA3B784.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/414DA6B1-8E87-4002-9BFE-9F4D19AC850E.jpg"
    alt=""
    annotations='[]'
 %}
+

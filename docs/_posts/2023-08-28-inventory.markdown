@@ -10,7 +10,7 @@ time_spent: 18000.0
 ---
 Inventory complete. A few items were missing and Van's was contacted. Hoping to get those items here soon. The first part to build is the vertical stabilizer, but we are unfortunately backordered on all the ribs. Maybe this is because of the laser drilled parts debacle? Duct tape used to keep some of the larger pieces in place in the crate takes the blue vinyl off of the wing. Ok for those that are planning to paint. May be a problem for those who choose to finish with bare metal (and not paint).
 
-***Time spent***: 5hr
+**Time spent**: 5hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html
@@ -18,3 +18,4 @@ Inventory complete. A few items were missing and Van's was contacted. Hoping to 
    alt=""
    annotations='[]'
 %}
+

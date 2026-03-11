@@ -10,7 +10,7 @@ time_spent: 212400.0
 ---
 Sep 8 - October 3, 2023: Most of this time was working on the rudder, and also some prep work on the horizontal stabilizer parts. Parts availability is still an issue. We can't finish the vertical stab due to missing ribs. Some of them are in-stock now, but some are still backordered due to the laser cut parts debacle. We also can't finish the rudder, due to backordered top rib. But, it looks like we can basically finish the rudder, and just insert the top rib and rivet in place later. Prepping parts was a big chunk of the time during this month. Mary started doing a lot of hole deburring, and acid etching to prep for primer. Lou did most of the big edge deburring chores using the Scotch wheel on the grinder. We finally put the spray gun to work, and it sprayed all of the parts so quickly! It takes much longer to mix and stir the primer and set up and clean the gun, than the actual spraying. So, we only use the gun on big batches of parts. Riveting is getting more routine, though it it still easy to make mistakes, and I've gotten plenty of practice drilling out rivets, usually when it is a different type or length of rivet than I have done before. The rudder has some challenging parts that made me quite nervous, like precisely countersinking all the holes in the TE for the double-flush rivets. And taping and then riveting the trailing edge. I used long aluminum angles clamped against the trailing edge (TE) to keep it straight while the double-sided tape cured, and that seemed like a good strategy (recommended by many other builders). I haven't yet done the double-flush rivets on the TE, since that is almost the last step. The very last step is shaping and riveting the leading edge - another difficult task it sounds like. Several times I ran into problems or challenges that caused a lot of head-scratching and work pauses. Then Paul (EAA tech adviser) and Kacy would come over, and get me unstuck very quickly! I'm learning a lot from them, but hope I'll become less dependent over time! Next up is finishing the rudder, probably another couple days work, maybe longer, due to some very hard-to-reach rivets and the need to bend the leading edges. After that comes the horizontal stabilizer, and it looks like we have all the parts in house for it, so that will keep us busy for a while!
 
-***Time spent***: 59hr
+**Time spent**: 59hr
 
 {% include annotated-image-init.html %}
 {% include annotated-image.html
@@ -18,33 +18,40 @@ Sep 8 - October 3, 2023: Most of this time was working on the rudder, and also s
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/C3A2F558-A21F-4C0B-98EE-6AC5E9FBDEC2.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/FC8B360F-2E94-449B-9DED-AFC5766E3C9F.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/81178E32-6214-4186-9876-86F7F9000063.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/B4F74A7F-8B7F-40B6-9F3D-79123A527A04.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/96BCC0BE-1546-4B9D-8275-7E063950FC3B.jpg"
    alt=""
    annotations='[]'
 %}
+
 {% include annotated-image.html
    src="/assets/C5D65870-2D1F-4A76-8768-448BC6BE2343.jpg"
    alt=""
    annotations='[]'
 %}
+
